@@ -171,7 +171,7 @@ const Page = () => {
             <div>
               <label className="text-gray-700">Select Tab Name:</label>
               <select
-                className="mt-1 w-full rounded border p-2"
+                className="mt-1 w-full rounded border p-2 text-black"
                 onChange={(e) => setSelectedPage(e.target.value)}
                 value={selectedPage}
               >
@@ -179,7 +179,7 @@ const Page = () => {
                   pages
                     .filter((page) => page.name.startsWith("Portfolio"))
                     .map((page) => (
-                      <option key={page._id} value={page._id}>
+                      <option key={page._id} value={page._id} style={{color:'black'}}>
                         {page.name}
                       </option>
                     ))
@@ -193,13 +193,13 @@ const Page = () => {
             <div>
               <label className="text-gray-700">Select Portfolio:</label>
               <select
-                className="mt-1 w-full rounded border p-2"
+                className="mt-1 w-full rounded border p-2 text-black"
                 onChange={(e) => setComponentId(e.target.value)}
                 value={componentId}
               >
                 {readComponents.length > 0 ? (
                   readComponents.map((page) => (
-                    <option key={page._id} value={page._id}>
+                    <option key={page._id} value={page._id} style={{color:'black'}}>
                       {page.name}
                     </option>
                   ))

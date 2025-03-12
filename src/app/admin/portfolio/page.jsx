@@ -189,13 +189,13 @@ const Portfolio = () => {
                 Select Portfolio Category:
               </label>
               <select
-                className="mt-1 w-full rounded border p-2"
+                className="mt-1 w-full rounded border p-2 text-black"
                 onChange={(e) => setSelectedPage(e.target.value)}
                 value={selectedPage}
               >
                 {filteredPages.length > 0 ? (
                   filteredPages.map((page) => (
-                    <option key={page._id} value={page._id}>
+                    <option key={page._id} value={page._id} style={{color:'black'}}>
                       {page.name}
                     </option>
                   ))
