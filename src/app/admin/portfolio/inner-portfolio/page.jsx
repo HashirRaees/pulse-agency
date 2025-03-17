@@ -169,7 +169,7 @@ const Page = () => {
           <form className="space-y-4" onSubmit={handleFormSubmit}>
             {/* Dropdown for Page Selection */}
             <div>
-              <label className="text-gray-700">Select Tab Name:</label>
+              <label className="text-gray-700">Select Portfolio Tab Name:</label>
               <select
                 className="mt-1 w-full rounded border p-2 text-black"
                 onChange={(e) => setSelectedPage(e.target.value)}
@@ -191,7 +191,7 @@ const Page = () => {
 
             {/* Dropdown for Component Selection */}
             <div>
-              <label className="text-gray-700">Select Portfolio:</label>
+              <label className="text-gray-700">Select Your Portfolio Component:</label>
               <select
                 className="mt-1 w-full rounded border p-2 text-black"
                 onChange={(e) => setComponentId(e.target.value)}
@@ -306,7 +306,7 @@ const Page = () => {
                 Select Portfolio Category:
               </label>
               <select
-                className="mt-1 w-full rounded border p-2"
+                className="mt-1 w-full rounded border p-2 text-black"
                 onChange={(e) => setSelectedPage(e.target.value)}
                 value={selectedPage}
               >
@@ -328,7 +328,7 @@ const Page = () => {
             <div>
               <label className="text-gray-700">Select Portfolio:</label>
               <select
-                className="mt-1 w-full rounded border p-2"
+                className="mt-1 w-full rounded border p-2 text-black"
                 onChange={(e) => setEditCompProfileId(e.target.value)}
                 value={editCompProfileId}
               >
@@ -412,7 +412,7 @@ const Page = () => {
             </div>
 
             <button
-              className="mr-2 rounded border border-blue-500 px-4 py-2 text-blue-500"
+              className="mr-2 rounded border border-blue-500 px-4 py-2 text-white"
               onClick={handleClose}
             >
               Close
@@ -420,7 +420,7 @@ const Page = () => {
 
             <button
               type="submit"
-              className="rounded bg-blue-500 px-4 py-2 text-white"
+              className="rounded bg-blue-500 px-4 py-2 text-white mr-2"
             >
               Update Portfolio
             </button>
