@@ -50,7 +50,7 @@ const Footer = () => {
         <div className="md:justify-none mx-auto flex w-full flex-wrap justify-between gap-8 px-8 lg:w-[88%] lg:px-0">
           {/* Logo & About Section */}
           <div className="mt-10 flex flex-col items-start gap-4 sm:mt-40 md:mt-0 md:min-h-[250px] md:w-[20%]">
-            <img className="h-8 w-auto " src="/white-logo.png" alt="Logo" />
+            <img className="h-8 w-auto" src="/white-logo.png" alt="Logo"/>
             <p className="text-sm leading-relaxed">
               Welcome to Pulse, a Vancouver-based marketing firm with years of
               experience in the field serving 8,000+ clients from various
@@ -69,6 +69,7 @@ const Footer = () => {
               { name: "Portfolio", link: "/our-work" },
               { name: "Insights", link: "/blog" },
               { name: "CRO Calculator", link: "/cro/#cal" },
+              {name: "Power Signature", link: "/#power-signature"}
             ].map((item, index) => (
               <Link
                 key={index}
@@ -213,7 +214,7 @@ const Footer = () => {
         {/* </div> */}
         {/* Footer Bottom */}
         <div className="mx-auto flex w-full flex-col items-center justify-between gap-4 px-8 md:flex-row lg:w-[88%] lg:px-0">
-          <h3 className="text-[18px]">© 2024 Pulse. All rights reserved.</h3>
+          <h3 className="text-[18px]">© 2025 Pulse. All Rights Reserved.</h3>
           <div className="flex gap-6 text-[18px]">
             <Link href="/privacy">Privacy Policy</Link>
             <Link href="/term-condition">Terms & Conditions</Link>
