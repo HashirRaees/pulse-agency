@@ -140,7 +140,7 @@ const Page = () => {
 
       if (response.ok) {
         const data = await response.json();
-        alert("Form submitted successfully:", data);
+        alert("Sucess:)", data);
         setSelectedPage("");
         setName("");
         setSectionKey("");

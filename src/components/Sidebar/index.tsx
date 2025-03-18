@@ -69,10 +69,10 @@ const menuGroups = [
             />
           </svg>
         ),
-        label: "Portfolio",
+        label: "Manage Website",
         route: "/admin/portfolio",
         children: [
-          { label: "Add Inner Page", route:"/admin/portfolio/inner-portfolio" },
+          { label: "Portfolio Inner Page", route:"/admin/portfolio/inner-portfolio" },
         ]
       },
     ],
