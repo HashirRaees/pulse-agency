@@ -6,7 +6,7 @@ export default function IanSection(){
     return(
         <> 
         {/* main section */}
-        <main className="md:h-[900px] h-[2100px] md:mt-16 w-full flex-col items-center gap-4 flex">
+        <main className="md:h-[900px] h-[2100px] md:mt-16 w-full flex-col items-center md:gap-4 gap-0 flex">
             {/* heading */}
             <div className="md:w-[1200px] w-full h-[80px] md:h-[50px] flex items-center justify-center">
                 <h1 className="md:text-5xl text-4xl font-bold">About Us</h1>
@@ -55,18 +55,19 @@ export default function IanSection(){
                     helps you level up and create something truly unforgettable. 
                     </p>
                     {/* button */}
-                    <div className="mt-4">
+                    <div className="md:mt-4 mt-8">
                     <Link href={"https://www.ianslater.ca/"} target="_blank">
                     <PrimaryBtn text={"Visit my site"} onClick={""} icon={""}/>
                     </Link>
                     </div>
                 </div>
                 {/* right image section */}
-                <div className="bg-gray-500 md:h-[670px] h-[22%] w-full md:w-[40%]">
+                <div className="bg-gray-500 md:h-[670px] md:mt-0 -mt-10 h-[22%] w-full md:w-[40%]">
                     <Image 
                     src={"/images/about_page_images/ian-slater.jpg"} 
                     height={0} width={670} alt="ian slater"
-                    className=""></Image>
+                    >
+                    </Image>
                 </div>
             </div>
         </main>
