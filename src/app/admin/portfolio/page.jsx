@@ -72,7 +72,7 @@ const Portfolio = () => {
 
       if (response.status >= 200 && response.status < 300) {
         const data = await response.json();
-        alert("Your form has been Added successfully:", data);
+        alert("Your component has been Added successfully:", data);
         setSelectedPage("");
         setName("");
         setSectionKey("");
