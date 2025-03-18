@@ -186,16 +186,16 @@ const Portfolio = () => {
             {/* Dropdown for Portfolio Categories */}
             <div>
               <label className="text-gray-700">
-                Select Portfolio Category:
+                Select Your Page Category:
               </label>
               <select
-                className="mt-1 w-full rounded border p-2"
+                className="mt-1 w-full rounded border p-2 text-black"
                 onChange={(e) => setSelectedPage(e.target.value)}
                 value={selectedPage}
               >
                 {filteredPages.length > 0 ? (
                   filteredPages.map((page) => (
-                    <option key={page._id} value={page._id}>
+                    <option key={page._id} value={page._id} style={{color:'black'}}>
                       {page.name}
                     </option>
                   ))
@@ -307,21 +307,24 @@ const Portfolio = () => {
             {/* Dropdown for Portfolio Categories */}
             <div>
               <label className="text-gray-700">
-                Select Portfolio Category:
+                Select Page:
               </label>
               <select
-                className="mt-1 w-full rounded border p-2"
+                className="mt-1 w-full rounded border p-2 text-black"
                 onChange={(e) => setSelectedPage(e.target.value)}
                 value={selectedPage}
               >
-                {pages.length > 0 ? (
-                  pages
-                    .filter((page) => page.name.startsWith("Portfolio"))
-                    .map((page) => (
-                      <option key={page._id} value={page._id}>
+                {pages?.length > 0 ? (
+                    pages?.map((page) => {
+                      if(page.name === "default" || page.name === "home page"){
+                        return null;
+                      }
+                      return(
+                        <option key={page._id} value={page._id}>
                         {page.name}
                       </option>
-                    ))
+                      )
+                    })
                 ) : (
                   <option disabled>Loading...</option>
                 )}
@@ -330,9 +333,9 @@ const Portfolio = () => {
 
             {/* Dropdown for Component Selection */}
             <div>
-              <label className="text-gray-700">Select Portfolio:</label>
+              <label className="text-gray-700">Select Category:</label>
               <select
-                className="mt-1 w-full rounded border p-2"
+                className="mt-1 w-full rounded border p-2 text-black"
                 onChange={(e) => setEditCompProfileId(e.target.value)}
                 value={editCompProfileId}
               >
@@ -416,7 +419,7 @@ const Portfolio = () => {
             </div>
 
             <button
-              className="mr-2 rounded border border-blue-500 px-4 py-2 text-blue-500"
+              className="mr-2 rounded border border-blue-500 px-4 py-2 text-white"
               onClick={handleClose}
             >
               Close
@@ -424,7 +427,7 @@ const Portfolio = () => {
 
             <button
               type="submit"
-              className="rounded bg-blue-500 px-4 py-2 text-white"
+              className="rounded bg-blue-500 px-4 py-2 text-white mr-2"
             >
               Update Portfolio
             </button>
