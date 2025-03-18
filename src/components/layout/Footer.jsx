@@ -50,7 +50,7 @@ const Footer = () => {
         <div className="md:justify-none mx-auto flex w-full flex-wrap justify-between gap-8 px-8 lg:w-[88%] lg:px-0">
           {/* Logo & About Section */}
           <div className="mt-10 flex flex-col items-start gap-4 sm:mt-40 md:mt-0 md:min-h-[250px] md:w-[20%]">
-            <img className="h-8 w-auto " src="/white-logo.png" alt="Logo" />
+            <Image className="h-8 w-auto" src="/white-logo.png" alt="Logo"></Image>
             <p className="text-sm leading-relaxed">
               Welcome to Pulse, a Vancouver-based marketing firm with years of
               experience in the field serving 8,000+ clients from various

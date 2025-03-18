@@ -146,7 +146,7 @@ export default function WhyChooseUs() {
               </Grid>
             </Grid>
             <div className="mt-18 flex justify-center md:mt-5">
-                <h2 className="md:text-md text-sm ">Want to unlock your site's full revenue potential? <strong>Let’s optimize your conversions today.</strong></h2>
+                <h2 className="md:text-md text-sm ">Want to unlock your site's full revenue potential? <strong>Let's optimize your conversions today.</strong></h2>
             </div>
           </Box>
         </Box>
