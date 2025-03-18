@@ -14,7 +14,7 @@ const Portfolio = () => {
   const [sectionKey, setSectionKey] = useState("");
   const [sectionHeading, setSectionHeading] = useState("");
   const [content, setContent] = useState("");
-  const [pictures, setPictures] = useState([]);
+  const [pictures, setPictures] = useState(null);
   const [imageComp, setImage] = useState("");
 
   // for compoennt update
@@ -37,7 +37,8 @@ const Portfolio = () => {
   }, []);
 
   const handleFileChange = (e) => {
-    setPictures(e.target.files);
+    setPictures(e.target.files); // Store the selected files in state
+    console.log(e.target.files, 'fileeeeeeeeeeeeeeeeeeeeeeeeee');
   };
 
   const handleFormSubmit = async (e) => {
@@ -125,14 +126,16 @@ const Portfolio = () => {
       name: form.get("name"),
       id: editCompProfileId,
       content: form.get("content"),
-      section: form.get("section"),
+      section: String(form.get("section")),
+      index: '0',
+      file: pictures[0],
     };
 
     try {
       const res = await FireApi("component/update", "PUT", formData);
-      window.location.reload();
       handleClose();
       alert("Updated Successfully");
+      // window.location.reload();
     } catch (error) {
       console.log(error);
       alert("Error updating component, Something went wrong!");
@@ -228,8 +231,8 @@ const Portfolio = () => {
                 className="mt-1 w-full rounded border p-2"
                 placeholder="Enter Section Key..."
                 value={sectionKey}
-                onChange={(e) => setSectionKey(e.target.value)}
-              />
+                onChange={(e) => setSectionKey(e.target.value.toString())}
+                />
             </div>
 
             {/* Section Identity Heading */}
@@ -250,7 +253,7 @@ const Portfolio = () => {
               <label className="text-gray-700">Content:</label>
               <textarea
                 name="content"
-                className="mt-1 w-full rounded border p-2"
+                className="mt-1 w-full rounded border p-2 text-black"
                 placeholder="Enter content..."
                 value={content}
                 onChange={(e) => setContent(e.target.value)}
@@ -394,7 +397,7 @@ const Portfolio = () => {
             <div>
               <label className="text-gray-700">Content (optional):</label>
               <textarea
-                className="mt-1 w-full rounded border p-2"
+                className="mt-1 w-full rounded border p-2 text-black"
                 placeholder="Enter content..."
                 value={content}
                 onChange={(e) => setContent(e.target.value)}
