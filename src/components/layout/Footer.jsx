@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 import { FaPhoneAlt, FaFacebookF, FaLinkedin } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
+import { MdEmail,MdArrowForward } from "react-icons/md";
 import { FiInstagram } from "react-icons/fi";
 import { IoCloseSharp, IoLogoYoutube } from "react-icons/io5";
 import { AiFillTikTok, AiOutlineWhatsApp } from "react-icons/ai";
@@ -244,9 +244,12 @@ const Footer = () => {
 
         <button
           onClick={toggleForm}
-          className="poppins-regular contact-btn fixed bottom-5 right-6 z-[9999] mt-8 flex items-center justify-between rounded-3xl border-none bg-white px-4 py-2 text-black outline-none ease-in-out hover:bg-my-blue-gradient hover:text-white hover:transition-all"
+          className="poppins-regular contact-btn2 fixed bottom-5 right-6 z-[9999] mt-8 flex items-center justify-center rounded-3xl border-none bg-white px-4 py-2 text-black outline-none ease-in-out hover:bg-my-blue-gradient hover:text-white hover:transition-all"
         >
           Book Now
+         <div className="ml-0 h-full rounded-full bg-[#6EE3D7] p-[2px]">
+           <MdArrowForward />
+         </div>
         </button>
 
         {showForm && (

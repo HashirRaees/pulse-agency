@@ -115,7 +115,7 @@ body {
   width: 100%;
   position: absolute;
   box-shadow: -20px 0px 100px 100px #2b7d9d;
-  opacity: 1;
+  opacity: 1;
 }
 #cancel-btn{
   font-size:10px !important;
@@ -359,8 +359,22 @@ p {
   padding: 13px 18px;
   font-size: 18px;
 }
+.contact-btn2 {
+  padding: 13px 13px;
+  font-size: 15px;
+}
 
 .contact-btn .rounded-full {
+  background: var(
+    --gradient,
+    linear-gradient(to top, #50a2d4, #6ee3d7)
+  ) !important;
+  color: #fff !important;
+  padding: 5px !important;
+  margin-left: 18px !important;
+}
+
+.contact-btn2 .rounded-full {
   background: var(
     --gradient,
     linear-gradient(to top, #50a2d4, #6ee3d7)
