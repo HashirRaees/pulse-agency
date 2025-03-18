@@ -272,7 +272,7 @@ const Portfolio = () => {
               className="mr-2 rounded border border-blue-500 px-4 py-2 text-blue-500"
               onClick={handleOpen}
             >
-              Edit Portfolio
+              Edit Page
             </span>
 
             <button
@@ -429,13 +429,13 @@ const Portfolio = () => {
               type="submit"
               className="rounded bg-blue-500 px-4 py-2 text-white mr-2"
             >
-              Update Portfolio
+              Update Page
             </button>
             <button
               onClick={handleDeletePortfolio}
               className="my-2 rounded bg-red-500 px-4 py-2 text-white"
             >
-              Delete Portfolio
+              Delete Page
             </button>
           </form>
         </Box>
