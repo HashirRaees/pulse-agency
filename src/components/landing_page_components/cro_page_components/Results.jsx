@@ -38,6 +38,9 @@ const Results = () => {
 
             <ul className="text-md space-y-2 text-gray-300 md:text-[26px]">
               <li className="ct-r-li ">
+              style={{
+                  backgroundImage:"url('/images/cro_page_images/icons/icon02.png')"
+                }}
                 <span className="mr-2 text-cyan-500">•</span> Increased sales
                 and revenue.
               </li>
