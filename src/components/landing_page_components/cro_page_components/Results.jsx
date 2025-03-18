@@ -38,17 +38,18 @@ const Results = () => {
 
             <ul className="text-md space-y-2 text-gray-300 md:text-[26px]">
               <li className="ct-r-li ">
-              style={{
-                  backgroundImage:"url('/images/cro_page_images/icons/icon02.png')"
+                <span
+                  style={{
+                  backgroundImage:`url('/images/cro_page_images/icons/icon.png')`
                 }}
-                <span className="mr-2 text-cyan-500">•</span> Increased sales
+                 className="mr-2 text-cyan-500">•</span> Increased sales
                 and revenue.
               </li>
 
               <li className="ct-r-li">
                 <span
                 style={{
-                  backgroundImage:"url('/images/cro_page_images/icons/icon02.png')"
+                  backgroundImage:`url('/images/cro_page_images/icons/icon02.png')`
                 }}
                  className="mr-2 text-cyan-500">•</span> Higher average
                 order value.
@@ -57,7 +58,7 @@ const Results = () => {
               <li className="ct-r-li">
                 <span
                   style={{
-                    backgroundImage:"url('/images/cro_page_images/icons/icon03.png')"
+                    backgroundImage:`url('/images/cro_page_images/icons/icon03.png')`
                   }}
                  className="mr-2 text-cyan-500">•</span> Improved customer
                 satisfaction and retention.
@@ -66,7 +67,7 @@ const Results = () => {
               <li className="ct-r-li">
                 <span
                   style={{
-                    backgroundImage:"url('/images/cro_page_images/icons/icon04.png')"
+                    backgroundImage:`url('/images/cro_page_images/icons/icon04.png')`
                   }}
                  className="mr-2 text-cyan-500">•</span> Lower cart
                 abandonment rates.
@@ -75,7 +76,7 @@ const Results = () => {
               <li className="ct-r-li">
                 <span
                   style={{
-                    backgroundImage:"url('/images/cro_page_images/icons/icon05.png')"
+                    backgroundImage:`url('/images/cro_page_images/icons/icon05.png')`
                   }}
                  className="mr-2 text-cyan-500">•</span> Scalable results
                 for long-term growth.

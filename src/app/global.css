@@ -28,13 +28,12 @@ body {
 
 .ct-r-li span {
   color: #fff;
-  background: url('https://pulsemarketing.cloud/mart9/wp-content/uploads/2025/03/21-2.png');
   background-size: contain;
   --size: 50px;
   width: var(--size);
   height: var(--size);
   display: inline-block;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;
 }
 
 @media (max-width: 600px) {
