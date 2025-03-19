@@ -37,8 +37,9 @@ const Portfolio = () => {
   }, []);
 
   const handleFileChange = (e) => {
-    setPictures(e.target.files); // Store the selected files in state
-    console.log(e.target.files, 'fileeeeeeeeeeeeeeeeeeeeeeeeee');
+    // setPictures(e.target.files);
+    setImage(e.target.files[0]);
+    console.log(e.target.files[0], 'imageeeeeeeeeeeeeeeeeeeeeeeee');
   };
 
   const handleFormSubmit = async (e) => {
@@ -121,21 +122,28 @@ const Portfolio = () => {
   const handleUpdatePortfolio = async (e) => {
     e.preventDefault();
 
-    const form = new FormData(e.target);
-    const formData = {
-      name: form.get("name"),
-      id: editCompProfileId,
-      content: form.get("content"),
-      section: String(form.get("section")),
-      index: '0',
-      file: pictures[0],
-    };
-
+    const form = new FormData();
+    form.append("name", name);
+    form.append("content", content);
+    form.append("section", sectionKey);
+    form.append("index", '0');
+    form.append("file", imageComp);
+    form.append("id", editCompProfileId);
     try {
-      const res = await FireApi("component/update", "PUT", formData);
+      const res = await fetch(`${baseURL}/component/update`, {
+        method: "PUT",
+        body: form,
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
       handleClose();
-      alert("Updated Successfully");
-      // window.location.reload();
+      if (res.status >= 200 && res.status < 300) {
+        const data = await res.json();
+        console.log(data);
+        alert("Component Updated Successfully");
+      }
+      window.location.reload();
     } catch (error) {
       console.log(error);
       alert("Error updating component, Something went wrong!");
