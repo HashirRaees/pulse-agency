@@ -327,7 +327,7 @@ const Portfolio = () => {
               >
                 {pages?.length > 0 ? (
                     pages?.map((page) => {
-                      if(page.name === "default" || page.name === "home page"){
+                      if(page.name === "default" || page.name === "home page" || page.name === "blogs"){
                         return null;
                       }
                       return(
