@@ -22,13 +22,13 @@ const menuItems = [
         items: [
           {
             name: "Web Development",
-            desc: "Custom websites and applications",
+            desc: "Custom Websites and Applications",
             path: "/web-development",
           },
           { name: "SEO", desc: "Search Engine Optimization", path: "/seo" },
           {
             name: "Branding",
-            desc: "Online store solutions",
+            desc: "Online Store Solutions",
             path: "/branding",
           },
           {
@@ -156,7 +156,7 @@ export default function Navbar() {
                   {/* Dropdown for mega menu */}
                   {item.categories && activeMenu === item.label && (
                     <div className="left-[-50%] z-50 w-screen -translate-x-[42%] translate-y-[-1px] transform bg-opacity-10 bg-gradient-to-r from-[#040117] to-black px-6 py-10 text-white shadow-2xl md:absolute">
-                      <div className="mx-auto grid max-w-[1210px] grid-cols-3 gap-8 pl-6">
+                      <div className="mx-auto grid max-w-[1210px] grid-cols-3 gap-8">
                         <div>
                           <h4 className="mb-4 text-lg font-semibold">
                             What Can We Do
@@ -313,13 +313,13 @@ export default function Navbar() {
 
                       {/* Subcategories dropdown */}
                       {item.categories && openSubmenu === index && (
-                        <div className="mt-4 space-y-6 pl-4">
+                        <div className="mt-4 space-y-6">
                           {item.categories.map((category) => (
                             <div key={category.title}>
-                              <h4 className="text-md mb-2 font-semibold text-blue-400">
+                              <h4 className="text-md mb-2 font-semibold text-blue-400 pl-2">
                                 {category.title}
                               </h4>
-                              <div className="space-y-2 pl-4">
+                              <div className="space-y-2">
                                 {category.items.map((subItem) => (
                                   <Link
                                     key={subItem.name}
