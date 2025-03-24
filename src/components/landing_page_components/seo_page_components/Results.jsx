@@ -3,14 +3,17 @@ import React from "react";
 
 const Results = () => {
   return (
-    <div className="mb-10 md:py-20">
+    <div className="mb-10 md:-mt-24 md:py-20">
+      {/*Heading*/}
       <div>
         <h1 className="mb-3 mt-20 text-center text-xl font-bold tracking-wide md:text-5xl">
           Real Results, Real Growth{" "}
         </h1>
       </div>
+      {/*Grid of results*/}
       <div className="mt-16 flex w-[100%] flex-col items-center justify-center gap-10 md:flex-row md:gap-0">
-        <div className="w-full md:w-[25%]">
+            {/*First Result*/}     
+          <div className="w-full md:w-[25%]">
           <div className="flex items-center justify-center">
             <Image
               src="/images/seo_page_images/icon03.png"
@@ -31,6 +34,7 @@ const Results = () => {
             </p>
           </div>
         </div>
+        {/*Second Result*/} 
         <div className="w-full md:w-[25%]">
           <div className="flex items-center justify-center">
             <Image
@@ -52,6 +56,7 @@ const Results = () => {
             </p>
           </div>
         </div>
+        {/*Third Result*/} 
         <div className="w-full md:w-[25%]">
           <div className="flex items-center justify-center">
             <Image

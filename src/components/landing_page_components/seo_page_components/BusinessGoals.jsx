@@ -23,7 +23,7 @@ const BusinessGoals = () => {
         {/* First row */}
         <div className="flex w-full flex-wrap justify-between gap-6">
           {/* card one  */}
-          <div className="border-1 flex min-h-[50px] w-full flex-col gap-3 rounded-2xl border bg-white bg-opacity-10 p-5 backdrop-blur-md md:min-h-[240px] md:w-[32%]">
+          <div className="border-1 cursor-pointer transition duration-400 hover:scale-105 flex min-h-[50px] w-full flex-col gap-3 rounded-2xl border bg-white bg-opacity-10 p-5 backdrop-blur-md md:min-h-[240px] md:w-[32%]">
             <h4>01</h4>
             <h3 className="text-xl font-bold tracking-wide">
               Business Assessment
@@ -37,7 +37,7 @@ const BusinessGoals = () => {
           </div>
 
           {/* card two  */}
-          <div className="border-1 flex min-h-[50px] w-full flex-col gap-3 rounded-2xl border bg-white bg-opacity-10 p-5 backdrop-blur-md md:min-h-[240px] md:w-[32%]">
+          <div className="border-1 cursor-pointer transition duration-400 hover:scale-105 flex min-h-[50px] w-full flex-col gap-3 rounded-2xl border bg-white bg-opacity-10 p-5 backdrop-blur-md md:min-h-[240px] md:w-[32%]">
             <h4>02</h4>
             <h3 className="text-xl font-bold tracking-wide">Target Customer</h3>
             <p className="text-sm">
@@ -49,7 +49,7 @@ const BusinessGoals = () => {
           </div>
 
           {/* card three  */}
-          <div className="border-1 flex min-h-[50px] w-full flex-col gap-3 rounded-2xl border bg-white bg-opacity-10 p-5 backdrop-blur-md md:min-h-[240px] md:w-[32%]">
+          <div className="border-1 cursor-pointer transition duration-400 hover:scale-105 flex min-h-[50px] w-full flex-col gap-3 rounded-2xl border bg-white bg-opacity-10 p-5 backdrop-blur-md md:min-h-[240px] md:w-[32%]">
             <h4>03</h4>
             <h3 className="text-xl font-bold tracking-wide">
               Competitor Analysis
@@ -69,7 +69,7 @@ const BusinessGoals = () => {
         {/* Second row */}
         <div className="md:mt-5 mt-3 flex w-full flex-wrap justify-between gap-6 md:gap-3">
           {/* card four */}
-          <div className="border-1 flex min-h-[50px] w-full flex-col gap-3 rounded-2xl border bg-white bg-opacity-10 p-5 backdrop-blur-md md:min-h-[240px] md:w-[23%]">
+          <div className="border-1 cursor-pointer transition duration-400 hover:scale-105 flex min-h-[50px] w-full flex-col gap-3 rounded-2xl border bg-white bg-opacity-10 p-5 backdrop-blur-md md:min-h-[240px] md:w-[23%]">
             <h4>04</h4>
             <h3 className="text-xl font-bold tracking-wide">
               Content Strategy
@@ -81,7 +81,7 @@ const BusinessGoals = () => {
           </div>
 
           {/* card five */}
-          <div className="border-1 flex min-h-[50px] w-full flex-col gap-3 rounded-2xl border bg-white bg-opacity-10 p-5 backdrop-blur-md md:min-h-[240px] md:w-[23%]">
+          <div className="border-1 cursor-pointer transition duration-400 hover:scale-105 flex min-h-[50px] w-full flex-col gap-3 rounded-2xl border bg-white bg-opacity-10 p-5 backdrop-blur-md md:min-h-[240px] md:w-[23%]">
             <h4>05</h4>
             <h3 className="text-xl font-bold tracking-wide">
               On-Page Optimization
@@ -93,7 +93,7 @@ const BusinessGoals = () => {
           </div>
 
           {/* card six */}
-          <div className="border-1 flex min-h-[50px] w-full flex-col gap-3 rounded-2xl border bg-white bg-opacity-10 p-5 backdrop-blur-md md:min-h-[240px] md:w-[23%]">
+          <div className="border-1 cursor-pointer transition duration-400 hover:scale-105 flex min-h-[50px] w-full flex-col gap-3 rounded-2xl border bg-white bg-opacity-10 p-5 backdrop-blur-md md:min-h-[240px] md:w-[23%]">
             <h4>06</h4>
             <h3 className="text-xl font-bold tracking-wide">
               Performance Tracking
@@ -103,8 +103,8 @@ const BusinessGoals = () => {
               continuous improvement.
             </p>
           </div>
-
-          <div className="border-1 flex min-h-[50px] w-full flex-col gap-3 rounded-2xl border bg-white bg-opacity-10 p-5 backdrop-blur-md md:min-h-[240px] md:w-[23%]">
+           {/* card seven */}
+          <div className="border-1 cursor-pointer transition duration-400 hover:scale-105 flex min-h-[50px] w-full flex-col gap-3 rounded-2xl border bg-white bg-opacity-10 p-5 backdrop-blur-md md:min-h-[240px] md:w-[23%]">
             <h4>07</h4>
             <h3 className="text-xl font-bold tracking-wide">
               SEO Consultation

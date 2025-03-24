@@ -7,11 +7,11 @@ const HeroSection = () => {
     <main
       style={{
         backgroundImage:
-          "url('/images/cro_page_images/cro-banner-min (1).jpg')",
+          "url('/images/cro_page_images/cro-banner-min.jpg')",
           backgroundAttachment:"fixed",
         backgroundSize: "cover",
       }}
-      className="flex h-[80vh] flex-col items-center justify-center text-center md:h-[70vh]"
+      className="flex h-[80vh] md:mt-20 flex-col items-center justify-center text-center md:h-[70vh]"
     >
       <div className="">
         <p>CRO Services</p>

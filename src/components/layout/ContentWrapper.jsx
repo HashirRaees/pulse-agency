@@ -20,13 +20,13 @@ const ContentWrapper = () => {
 
   return (
     <div>
-      {/* <SeorankingWidget />   */}
+      {/* <SeorankingWidget >  */}
       <HeroSection />
       <ChoosePlus />
       <Tabs />
       <BrandLogoCards />
       <Projects />
-      <DownloadBook/>
+      {/* <DownloadBook/> */}
       <HeroSection2/>
       <div className="relative top-[500px] md:top-[530px] ">
       <Expertise />

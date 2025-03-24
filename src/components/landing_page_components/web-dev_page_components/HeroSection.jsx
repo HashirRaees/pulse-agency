@@ -45,6 +45,7 @@ const HeroSection = () => {
                 alt="blue-dot"
                 width={20}
                 height={20}
+                loading="eager"
               />
               <p>Web Development</p>
             </span>

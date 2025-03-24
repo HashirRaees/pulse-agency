@@ -17,12 +17,12 @@ body {
 }
 .ct-r-li {
   display: inline-flex;
-  background: #fff;
+  /* background: #fff; */
   padding: 6px 8px;
   margin: 0 15px 10px 0;
   border-radius: 5px;
   list-style: none;
-  color: #000;
+  color: #fff;
   align-items: center;
 }
 
@@ -37,6 +37,15 @@ body {
 }
 
 @media (max-width: 600px) {
+  .ct-banner:before {
+    content: "" !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    position: absolute !important;
+    box-shadow: -20px 0px 100px 100px #2b7d9d !important;
+    opacity: 0 !important;
+    display: hidden !important;
+  }
   .cro-calculator{
       height: 1169px;
       width: 100%;
@@ -78,8 +87,8 @@ body {
       z-index: 1;
     }
   .bg-overlay{
-    background-position: 0 0;
-    background-size: cover;
+    background-position: 0 0 !important;
+    background-size: cover !important;
     padding: 0px;
   }
   .bg-overlay::before{
@@ -95,18 +104,9 @@ body {
   .swiper-slide {
     width: 100% !important;
   }
-  .ct-banner:before {
-    content: "";
-    bottom: 0;
-    width: 100%;
-    position: absolute;
-    box-shadow: -20px 0px 100px 100px #2b7d9d;
-    opacity: 0;
-    display: hidden;
-  }
 }
 .ct-banner {
-  position: relative;
+  position: relative !important;
 }
 
 .ct-banner:before {

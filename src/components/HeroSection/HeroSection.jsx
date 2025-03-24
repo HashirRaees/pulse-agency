@@ -60,6 +60,7 @@ const HeroLeftContent = () => {
               src={"/accrebited-bussiness-logo2.png"}
               width={125}
               height={125}
+              loading="eager"
             />
           </Link>
 
@@ -74,6 +75,7 @@ const HeroLeftContent = () => {
               src={"/google-review-logo2.png"}
               width={125}
               height={125}
+              loading="eager"
             />
           </Link>
         </div>
@@ -363,13 +365,14 @@ const HeroSection = () => {
               >
                 <div
                   className="flex items-center  justify-center rounded-full 
-               py-3 hover:cursor-pointer hover:bg-blue-400 hover:duration-100 hover:ease-in-out"
+               py-3 hover:cursor-pointer hover:bg-red-400 hover:duration-100 hover:ease-in-out"
                 >
                   <Image
                     src={"/Subtract.png"}
                     alt="subtract"
                     width={12}
                     height={12}
+                    loading="eager"
                   />
                 </div>
               </Link>
@@ -382,13 +385,14 @@ const HeroSection = () => {
               >
                 <div
                   className="flex  items-center justify-center rounded-full 
-              py-3 hover:cursor-pointer hover:bg-blue-400 hover:duration-100 hover:ease-in-out"
+              py-3 hover:cursor-pointer hover:bg-blue-500 hover:duration-100 hover:ease-in-out"
                 >
                   <Image
                     src={"/Linkedin.png"}
                     alt="linkedin"
                     width={12}
                     height={12}
+                    loading="eager"
                   />
                 </div>
               </Link>
@@ -399,13 +403,14 @@ const HeroSection = () => {
               >
                 <div
                   className="flex  items-center justify-center rounded-full
-               py-[14px] hover:cursor-pointer hover:bg-blue-400 hover:duration-100 hover:ease-in-out"
+               py-[14px] hover:cursor-pointer hover:bg-red-600 hover:duration-100 hover:ease-in-out"
                 >
                   <Image
                     src={"/Youtube.png"}
                     alt="youtube"
                     width={12}
                     height={12}
+                    loading="eager"
                   />
                 </div>
               </Link>

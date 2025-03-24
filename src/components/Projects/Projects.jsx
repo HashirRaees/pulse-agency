@@ -138,13 +138,13 @@ const Projects = () => {
         {/* project section left box  */}
         <div className="mx-auto flex w-[90%] items-center justify-center rounded-md p-5 md:mx-0 md:w-[40%] md:p-0 ">
           {tabImage === 0 && (
-            <Image src={"/mob-app01.png"} alt="mob1" width={200} height={200} />
+            <Image src={"/mob-app01.png"} loading="eager" alt="mob1" width={200} height={200} />
           )}
           {tabImage === 1 && (
-            <Image src={"/mob-app03.png"} alt="mob2" width={200} height={200} />
+            <Image src={"/mob-app03.png"} loading="eager" alt="mob2" width={200} height={200} />
           )}
           {tabImage === 2 && (
-            <Image src={"/mob-app02.png"} alt="mob3" width={200} height={200} />
+            <Image src={"/mob-app02.png"} loading="eager" alt="mob3" width={200} height={200} />
           )}
         </div>
 
@@ -180,6 +180,7 @@ const Projects = () => {
                 alt="mob"
                 width={300}
                 height={300}
+                loading="eager"
               />
             )}
             {tabImage === 1 && (
@@ -188,6 +189,7 @@ const Projects = () => {
                 alt="mob4"
                 width={300}
                 height={300}
+                loading="eager"
               />
             )}
             {tabImage === 2 && (
@@ -196,6 +198,7 @@ const Projects = () => {
                 alt="mob5"
                 width={300}
                 height={300}
+                loading="eager"
               />
             )}
           </div>

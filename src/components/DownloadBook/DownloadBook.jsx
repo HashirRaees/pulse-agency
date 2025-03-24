@@ -31,9 +31,10 @@ const DownloadBook = () => {
         </div>
 
         <Image
-          src={"/images/brand like a boss book mokcup.png"}
+          src={"/images/brand like a boss book mockup.png"}
           width={400}
           height={400}
+          loading="eager"
         />
       </div>
     </>

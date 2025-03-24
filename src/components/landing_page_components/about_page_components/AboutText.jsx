@@ -57,6 +57,7 @@ const AboutText = () => {
               className="rounded-2xl"
               layout="fill"
               objectFit="cover"
+              loading="eager"
             />
           </div>
         </div>

@@ -11,7 +11,7 @@ const HeroSection = () => {
     <main
       style={{
         backgroundImage:
-          "url('/images/cro_page_images/cro-banner-min (1).jpg')",
+          "url('/images/cro_page_images/cro-banner-min.jpg')",
         backgroundSize: "cover",
         backgroundAttachment: "fixed",
         backgroundPosition: "center",

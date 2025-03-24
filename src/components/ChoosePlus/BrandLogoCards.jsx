@@ -52,6 +52,7 @@ const BrandLogoCards = () => {
                   width={200}
                   height={0}
                   className="filter-invert"
+                  loading="eager"
                 />
             </div>
           </div>

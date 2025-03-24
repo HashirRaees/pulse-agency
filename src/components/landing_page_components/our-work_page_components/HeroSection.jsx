@@ -222,7 +222,7 @@ const HeroSection = () => {
             backgroundImage: "url('/images/services_page_images/circle.png/')",
             backgroundSize: "cover",
           }}
-          className="h-[30vh] translate-y-[-50%] transform overflow-auto md:h-[32rem] md:translate-y-[-80%]"
+          className="h-[30vh] translate-y-[-50%] transform overflow-auto md:h-[32rem] md:translate-y-[-93%]"
         />
         <div
           className="absolute top-0 z-10 flex w-full flex-col items-center justify-center px-4 md:-top-14 md:px-0"
@@ -232,7 +232,7 @@ const HeroSection = () => {
             backgroundRepeat: "no-repeat",
           }}
         >
-          <div className="z-10 translate-y-0 sm:p-0 p-4 transform text-center md:translate-y-10">
+          <div className="z-10 translate-y-0 transform p-4 text-center sm:p-0 md:translate-y-10">
             {/* <h1 className="text-lg font-bold tracking-wide md:text-5xl">
               Our Work Your Inspiration
             </h1> */}
@@ -278,12 +278,14 @@ const HeroSection = () => {
                         </div>
                       ))}
                     </div>
-                    <PrimaryBtn
-                      text="View Site"
-                      onClick={() => {
-                        window.open(`${image?.section}`, "_blank");
-                      }}
-                    />
+                    <div className="mr-0 md:mr-8">
+                      <PrimaryBtn
+                        text="View Site"
+                        onClick={() => {
+                          window.open(`${image?.section}`, "_blank");
+                        }}
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -318,7 +320,7 @@ const HeroSection = () => {
                 </Link>
               </div>
 
-              <div className="-mt-2 md:mt-2 md:mb-6">
+              <div className="-mt-2 md:mb-6 md:mt-2">
                 <h4 className="text-center text-xl font-semibold tracking-wide">
                   {image?.name.toUpperCase()}
                 </h4>
@@ -340,12 +342,14 @@ const HeroSection = () => {
                       </div>
                     ))}
                   </div>
-                  <PrimaryBtn
-                    text="View Site"
-                    onClick={() => {
-                      window.open(`${image?.section}`, "_blank");
-                    }}
-                  />
+                  <div className="mr-0 md:mr-8">
+                    <PrimaryBtn
+                      text="View Site"
+                      onClick={() => {
+                        window.open(`${image?.section}`, "_blank");
+                      }}
+                    />
+                  </div>
                 </div>
               </div>
             </div>

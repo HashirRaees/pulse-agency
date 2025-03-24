@@ -113,7 +113,7 @@ const SeoApproach = () => {
 
             {/* right box  */}
             <div
-              className="md: flex w-full flex-col gap-4 md:mt-8 md:w-[40%]"
+              className="flex w-full flex-col gap-4 md:mt-8 md:w-[40%]"
               style={{
                 backgroundImage: "url('/images/app_page_images/radial.png)",
                 backgroundSize: "contain",

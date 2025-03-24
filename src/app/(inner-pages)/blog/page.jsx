@@ -145,7 +145,7 @@ const BlogPage = () => {
         </div>
       </main>
 
-      <div className="mx-auto my-4 flex max-w-[1200px] translate-y-[-10%] transform flex-wrap justify-between gap-4 px-4 pt-6 md:my-0 md:translate-y-[-20%]">
+      <div className="mx-auto my-4 flex max-w-[1200px] translate-y-[-9%] transform flex-wrap justify-between gap-4 px-4 pt-6 md:my-0 md:translate-y-[-20%]">
         {currentBlogs.map((item, index) => (
           <div
             key={index}

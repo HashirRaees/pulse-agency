@@ -81,6 +81,7 @@ const Footer = () => {
                   width={10}
                   height={10}
                   alt="Dot"
+                  loading="eager"
                 />
                 <span className="hover:underline-animation relative text-[18px]">
                   {item.name}
@@ -110,6 +111,7 @@ const Footer = () => {
                   width={10}
                   height={10}
                   alt="Dot"
+                  loading="eager"
                 />
                 <span className="hover:underline-animation relative text-[18px]">
                   {service.name}
@@ -186,6 +188,7 @@ const Footer = () => {
                   src={"/accrebited-bussiness-logo2.png"}
                   width={125}
                   height={125}
+                  loading="eager"
                 />
               </Link>
 
@@ -200,6 +203,7 @@ const Footer = () => {
                   src={"/google-review-logo2.png"}
                   width={125}
                   height={125}
+                  loading="eager"
                 />
               </Link>
             </div>

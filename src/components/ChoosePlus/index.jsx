@@ -42,6 +42,7 @@ export const ChooseCardsSlider = () => {
                 width={170}
                 height={170}
                 className="filter-invert"
+                loading="eager"
               />
             </div>
           </div>

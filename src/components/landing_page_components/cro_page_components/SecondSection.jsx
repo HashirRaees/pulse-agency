@@ -23,7 +23,7 @@ const SecondSection = () => {
         </div> */}
 
         {/* inner content  */}
-        <div className="mb-4 mt-6  flex-col overflow-hidden px-6 md:mx-auto  md:mb-0 md:flex md:w-[1200px] md:items-center md:justify-end md:px-0 lg:flex-row">
+        <div className="mb-4 mt-6 flex-col overflow-hidden px-6 md:mx-auto  md:mb-0 md:flex md:w-[1200px] md:items-center md:justify-end md:px-0 lg:flex-row">
           {/* left box  */}
           {/* <div className="h-[100%] w-full rounded-2xl md:w-[60%] ">
             <Image
@@ -42,7 +42,7 @@ const SecondSection = () => {
               backgroundRepeat: "no-repeat",
             }}
           >
-            <p>
+            <p className="relative">
               At Pulse, we specialize in Conversion Rate Optimization (CRO) to
               help e-commerce businesses maximize their sales and revenue. Our
               tailored CRO strategies are designed to identify barriers in your
@@ -50,7 +50,7 @@ const SecondSection = () => {
               casual visitors into loyal customers.
             </p>
 
-            <p className="mt-4">
+            <p className="mt-4 relative">
               Whether you are running a Shopify store or another e-commerce
               platform, we have the expertise to deliver results that exceed
               your expectations.

@@ -79,7 +79,7 @@ const Testimonials = () => {
                 </div>
               </div>
               <a
-                href="https://www.google.com/search?sa=X&sca_esv=47cd9fb8f57accb3&sxsrf=AHTn8zrMjdQJ0dlTGSa3NDKYhbQjex_f3Q:1739048872623&q=Pulse+Marketing&si=APYL9bthn74ZzM9ZeOfomMFmXjJ7rkBmwIcbOthlZBZALWR0yiDiBkX4LuJ6BaLbO6SSEofiikM8I_Gz3EX7mGDOYK-wuK6QyAx2GBkf5H05hbWGONlMMVGKGjM4F8UBlFaPOl0HN7f_12o6sT2kPVHgcnRSt-xIYM9Vd4wq4YXgb8Uezpp8DsbWlteMdho2oeO2UhRSlYvzNtakPoWZoJvsD1Q1pZ3klTl8JgqGWHkesfysY5UMOqAD2jSVk1gwimEw-xP8Ia-Dvbg3RHFfxsnvd4Gdic8WI9tT72iu9oD7QLVC218LD-A%3D&ved=2ahUKEwiTzbLy_bSLAxVOgv0HHdJCLgcQ6RN6BAgaEAE&biw=1366&bih=645&dpr=1"
+                href="https://www.google.com/maps/place//data=!4m3!3m2!1s0x548671d515827dc7:0x789b393774e26cc6!12e1?source=g.page.m._&laa=merchant-review-solicitation"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -89,6 +89,7 @@ const Testimonials = () => {
                   className="rounded-full"
                   width={30}
                   height={30}
+                  loading="eager"
                 />
               </a>
             </div>

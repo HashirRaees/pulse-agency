@@ -42,7 +42,7 @@ const Results = () => {
                   style={{
                   backgroundImage:`url('/images/cro_page_images/icons/icon.png')`
                 }}
-                 className="mr-2 text-cyan-500">•</span> Increased sales
+                 className="mr-2"></span> Increased sales
                 and revenue.
               </li>
 
@@ -51,7 +51,7 @@ const Results = () => {
                 style={{
                   backgroundImage:`url('/images/cro_page_images/icons/icon02.png')`
                 }}
-                 className="mr-2 text-cyan-500">•</span> Higher average
+                 className="mr-2"></span> Higher average
                 order value.
               </li>
 
@@ -60,7 +60,7 @@ const Results = () => {
                   style={{
                     backgroundImage:`url('/images/cro_page_images/icons/icon03.png')`
                   }}
-                 className="mr-2 text-cyan-500">•</span> Improved customer
+                 className="mr-2"></span> Improved customer
                 satisfaction and retention.
               </li>
 
@@ -69,7 +69,7 @@ const Results = () => {
                   style={{
                     backgroundImage:`url('/images/cro_page_images/icons/icon04.png')`
                   }}
-                 className="mr-2 text-cyan-500">•</span> Lower cart
+                 className="mr-2"></span> Lower cart
                 abandonment rates.
               </li>
 
@@ -78,7 +78,7 @@ const Results = () => {
                   style={{
                     backgroundImage:`url('/images/cro_page_images/icons/icon05.png')`
                   }}
-                 className="mr-2 text-cyan-500">•</span> Scalable results
+                 className="mr-2"></span> Scalable results
                 for long-term growth.
               </li>
             </ul>

@@ -119,11 +119,12 @@ export default function Tabs() {
                 <Image
                   src={item?.pictures[0]}
                   layout="fill"
-                  objectFit="contain"
+                  objectFit="cover"
                   alt="Project Image"
                   priority
                   quality={100}
                   className="cursor-pointer rounded-2xl"
+                  loading="eager"
                 />
               </Link>
             </div>
@@ -144,6 +145,7 @@ export default function Tabs() {
                         alt="blue-dot"
                         width={16}
                         height={16}
+                        loading="eager"
                       />
                       <p className="text-sm font-medium">{tag}</p>
                     </div>

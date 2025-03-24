@@ -198,7 +198,7 @@ const UpperTextComponent = () => {
       <main>
         {/* <div className="mt-8 md:my-[5rem] md:border-b md:border-[#363445]" /> */}
 
-        <div className="m-auto flex-row items-center justify-between pb-20 md:flex md:pb-12 lg:w-[85%]">
+        <div className="m-auto flex-row items-center justify-between pb-20 md:flex md:pb-12 lg:w-[91%]">
           <div className=" w-[80%] md:w-[50%]">
             <h1 className="poppins-medium ct-heading text-6xl">
             Results-Driven Digital <br className="md:hidden"/> Solutions for <br className="md:hidden"/> Business Growth.
@@ -361,6 +361,7 @@ const Cards = () => {
                     style={{
                       backgroundImage: `url('/images/services_page_images/cro-section.png')`,
                       backgroundSize: "cover",
+                      backgroundPosition:"50%"
                     }}
                   >
                     {/* Left Column */}
