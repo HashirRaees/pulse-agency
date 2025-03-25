@@ -127,7 +127,7 @@ export default function PortfolioSlider() {
           <SwiperSlide key={index} className="w-[280px] md:w-[370px] mx-5">
             <div className="relative group">
               <a rel="noopener noreferrer">
-                <div className="relative overflow-hidden rounded-xl cursor-pointer transition-all duration-300 transform group-hover:scale-[1.02]">
+                <div className="relative overflow-hidden rounded-xl cursor-default transition-all duration-300 transform group-hover:scale-[1.02]">
                   <img
                     src={item.src}
                     alt={item.src}
