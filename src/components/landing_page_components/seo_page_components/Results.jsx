@@ -16,7 +16,7 @@ const Results = () => {
           <div className="w-full md:w-[25%]">
           <div className="flex items-center justify-center">
             <Image
-              src="/images/seo_page_images/icon03.png"
+              src="/images/seo_page_images/new-icons/icon0001.png"
               alt=""
               width={120}
               height={120}
@@ -38,7 +38,7 @@ const Results = () => {
         <div className="w-full md:w-[25%]">
           <div className="flex items-center justify-center">
             <Image
-              src="/images/seo_page_images/icon02.png"
+              src="/images/seo_page_images/new-icons/icon0002.png"
               alt=""
               width={120}
               height={120}
@@ -60,7 +60,7 @@ const Results = () => {
         <div className="w-full md:w-[25%]">
           <div className="flex items-center justify-center">
             <Image
-              src="/images/seo_page_images/icon01.png"
+              src="/images/seo_page_images/new-icons/icon0003.png"
               alt=""
               width={120}
               height={120}
