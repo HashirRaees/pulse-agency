@@ -6,7 +6,7 @@ const Results = () => {
     <div className="mb-10 md:-mt-24 md:py-20">
       {/*Heading*/}
       <div>
-        <h1 className="mb-3 mt-20 text-center text-xl font-bold tracking-wide md:text-5xl">
+        <h1 className="mb-3 mt-16 text-center text-xl font-bold tracking-wide md:text-5xl">
           Real Results, Real Growth{" "}
         </h1>
       </div>

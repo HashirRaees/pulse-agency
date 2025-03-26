@@ -145,7 +145,7 @@ const BlogPage = () => {
         </div>
       </main>
 
-      <div className="mx-auto my-4 flex max-w-[1200px] translate-y-[-9%] transform flex-wrap justify-between gap-4 px-4 pt-6 md:my-0 md:translate-y-[-17%]">
+      <div className="mx-auto my-4 flex max-w-[1200px] translate-y-[-7%] transform flex-wrap justify-between gap-8 md:gap-4 px-4 pt-6 md:my-0 md:translate-y-[-20%]">
         {currentBlogs.map((item, index) => (
           <div
             key={index}
@@ -186,7 +186,7 @@ const BlogPage = () => {
       </div>
 
       {/* pagination  */}
-      <div className="-mt-[22rem] mb-20 flex justify-center md:-mt-[12%]">
+      <div className="-mt-[20rem] mb-20 flex justify-center md:-mt-[12%]">
         <CustomPagination
           count={Math.ceil(blogComponent.length / blogsPerPage)} // Total pages
           page={currentPage}

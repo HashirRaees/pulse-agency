@@ -11,7 +11,7 @@ const SeoProcess = () => {
       backgroundPosition:"center",
       backgroundAttachment: "fixed",
     }}
-     className="mt-10 w-full px-6 py-16 md:mx-auto md:mt-0 md:w-full md:px-0">
+     className="w-full px-6 py-16 md:mx-auto md:mt-0 md:w-full md:px-0">
       <div>
         <h1 className="mb-3 text-center text-xl font-bold tracking-wide md:text-5xl">
           <span className="block md:inline">The Pulse SEO Process:</span>
