@@ -257,7 +257,7 @@ const HeroSection = () => {
                 </div>
 
                 <div className="-mt-2 md:mt-2">
-                  <h4 className="text-center text-xl font-semibold tracking-wide">
+                  <h4 className="text-left text-xl font-semibold tracking-wide">
                     {image?.name.toUpperCase()}
                   </h4>
 
@@ -321,7 +321,7 @@ const HeroSection = () => {
               </div>
 
               <div className="-mt-2 md:mb-6 md:mt-2">
-                <h4 className="text-center text-xl font-semibold tracking-wide">
+                <h4 className="text-left text-xl font-semibold tracking-wide">
                   {image?.name.toUpperCase()}
                 </h4>
 

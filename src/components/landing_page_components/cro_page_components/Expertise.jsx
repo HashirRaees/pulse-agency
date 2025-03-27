@@ -126,7 +126,7 @@ const Expertise = () => {
                     className="flex flex-col items-center justify-center px-2 mt-10" key={index}>
                         <Image src={item.image} loading="eager" alt={item.content} width={400} height={250} className="rounded-lg" />
                         <h3 className="text-start font-semibold text-2xl mt-3">{item.title}</h3>
-                        <p className="text-start text-[16px] mt-3">{item.content.slice(0, 70) + '..'}</p>
+                        <p className="text-start text-[16px] mt-3">{item.content.slice(0, 70)}</p>
                     </motion.div>
                 ))}
             </Slider>

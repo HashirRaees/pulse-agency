@@ -121,7 +121,7 @@ const HeroSection = () => {
     <>
       <main
         style={{
-          backgroundImage: "url('/about-banner.jpg')",
+          backgroundImage: "url('/images/about_page_images/banner-01.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundAttachment: "fixed",

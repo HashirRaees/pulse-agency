@@ -15,7 +15,7 @@ const Branding = () => {
             <HeroSection/>
             <PortfolioSection/>
             <BrandingSection/>
-            <div className='md:mt-0 mt-10'>
+            <div className='md:mt-30 mt-10'>
             <DesignServicesSection/>
             </div>
             <BrandingProcess/>

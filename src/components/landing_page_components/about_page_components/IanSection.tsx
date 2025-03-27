@@ -15,7 +15,8 @@ export default function IanSection(){
             <div className="md:w-[1200px] mt-0 w-[90%] flex flex-col items-center justify-between md:flex-row h-full md:h-[720px]">
                 <div className="flex flex-col p-5 md:p-4 md:h-full h-[70%] w-full md:w-[58%]">
                     <h2 className="text-xl font-semibold">Principal, Ian Slater</h2>
-                    <p className="mt-3 md:text-md text-xs md:leading-tight leading-snug"><span className="mb-2">Ian Slater<br/></span>
+                    <span className="text-lg mt-3">Ian Slater<br/></span>
+                    <p className="mt-3 md:text-md text-xs md:leading-tight leading-snug">
                     I’ve always been obsessed with business, 
                     branding, and the power of a strong narrative.
                      Growing up on the coast of British Columbia with 
@@ -57,7 +58,7 @@ export default function IanSection(){
                     {/* button */}
                     <div className="md:mt-4 mt-8">
                     <Link href={"https://www.ianslater.ca/"} target="_blank">
-                    <PrimaryBtn text={"Visit my site"} onClick={""} icon={""}/>
+                    <PrimaryBtn text={"Visit my Site"} onClick={""} icon={""}/>
                     </Link>
                     </div>
                 </div>

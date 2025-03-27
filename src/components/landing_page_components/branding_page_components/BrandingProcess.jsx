@@ -6,7 +6,7 @@ import { motion } from "motion/react";
 const BrandingProcess = () => {
   return (
     <main
-      className="-mt-40 w-full px-6 py-16 md:mx-auto md:mt-0 md:w-[1200px] md:px-0"
+      className="-mt-40 w-full px-6 py-16 md:mx-auto md:-mt-10 md:w-[1200px] md:px-0"
       style={{
         backgroundImage: "url('/images/app_page_images/radial.png')",
         backgroundSize: "contain",
