@@ -6,7 +6,14 @@ export default function IanSection(){
     return(
         <> 
         {/* main section */}
-        <main className="md:h-[900px] h-[2100px] md:mt-16 w-full mt-8 flex-col items-center md:gap-4 gap-0 flex">
+        <main
+        // style={{
+        //     backgroundImage: `url(/images/about_page_images/ian-slater-about.jpg)`,
+        //     backgroundRepeat:'no-repeat',
+        //     backgroundSize:'cover',
+
+        // }}
+         className="md:h-[900px] h-[2100px] md:mt-16 w-full mt-8 flex-col items-center md:gap-4 gap-0 flex">
             {/* heading */}
             <div className="md:w-[1200px] w-full h-[80px] md:h-[50px] flex items-center justify-center">
                 <h1 className="md:text-5xl text-4xl font-bold">About Us</h1>
@@ -65,7 +72,7 @@ export default function IanSection(){
                 {/* right image section */}
                 <div className="bg-gray-500 md:h-[670px] md:mt-0 -mt-10 h-[22%] w-full md:w-[40%]">
                     <Image 
-                    src={"/images/about_page_images/ian-slater.jpg"} 
+                    src={"/images/about_page_images/ian-slater-about.jpg"} 
                     height={0} width={670} alt="ian slater"
                     >
                     </Image>
