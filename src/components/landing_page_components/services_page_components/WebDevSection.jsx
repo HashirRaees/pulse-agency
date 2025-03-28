@@ -13,14 +13,13 @@ const WebDevSection = () => {
         style={{
           backgroundImage: "url('/images/services_page_images/circle.png')",
           backgroundSize: "cover",
-          transform: "translateY(-50%)",
         }}
-        className="h-[120px] md:h-[704px]"
+        className="h-[143px] md:-translate-y-[50%] -translate-y-[95%] md:h-[704px]"
       />
 
       {/* Content Section */}
       <div
-        className="absolute z-10 flex w-full translate-y-[-15%] flex-col items-center justify-center md:top-5 md:translate-y-0 "
+        className="absolute z-10 flex w-full translate-y-[-20%] flex-col items-center justify-center md:top-5 md:translate-y-0 "
         style={{
           // backgroundColor: '#040117',
           backgroundSize: "cover",

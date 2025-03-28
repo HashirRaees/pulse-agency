@@ -6,7 +6,7 @@ export default function IanSection(){
     return(
         <> 
         {/* main section */}
-        <main className="md:h-[900px] h-[2100px] md:mt-16 w-full flex-col items-center md:gap-4 gap-0 flex">
+        <main className="md:h-[900px] h-[2100px] md:mt-16 w-full mt-8 flex-col items-center md:gap-4 gap-0 flex">
             {/* heading */}
             <div className="md:w-[1200px] w-full h-[80px] md:h-[50px] flex items-center justify-center">
                 <h1 className="md:text-5xl text-4xl font-bold">About Us</h1>
