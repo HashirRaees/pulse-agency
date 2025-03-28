@@ -58,7 +58,7 @@ export default function IanSection(){
                     {/* button */}
                     <div className="md:mt-4 mt-8">
                     <Link href={"https://www.ianslater.ca/"} target="_blank">
-                    <PrimaryBtn text={"Visit my Site"} onClick={""} icon={""}/>
+                    <PrimaryBtn text={"Visit My Site"} onClick={""} icon={""}/>
                     </Link>
                     </div>
                 </div>
