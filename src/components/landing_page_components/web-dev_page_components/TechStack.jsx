@@ -17,7 +17,7 @@ const TechStack = () => {
     { img: "/images/web-dev_page_images/logos (9).png" },
   ];
   return (
-    <main className="px-14 py-10">
+    <main className="px-14 py-10 md:mt-0 -mt-40">
       <div className="flex w-full flex-col items-center justify-center">
         
           <h2 className="text-center text-2xl font-bold tracking-wide md:pb-3 md:text-5xl">

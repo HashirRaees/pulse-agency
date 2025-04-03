@@ -11,7 +11,7 @@ const HeroSection = () => {
           backgroundAttachment:"fixed",
         backgroundSize: "cover",
       }}
-      className="flex h-[80vh] mt-16 md:mt-20 flex-col items-center justify-center text-center md:h-[70vh]"
+      className="flex h-[80vh] cro-home mt-16 md:mt-20 flex-col items-center justify-center text-center md:h-[70vh]"
     >
       <div className="">
         <p>CRO Services</p>

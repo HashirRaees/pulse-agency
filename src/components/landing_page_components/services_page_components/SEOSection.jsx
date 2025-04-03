@@ -26,7 +26,7 @@ const SEOSection = () => {
         <div
           className="flex transform flex-col items-center justify-between gap-8 rounded-xl p-8 transition-transform duration-700 ease-in-out hover:scale-105 lg:flex-row"
           style={{
-            backgroundImage: `url('/images/services_page_images/fifth-section-img.png')`,
+            backgroundImage: `url('/images/services_page_images/01.png')`,
             backgroundSize: "cover",
             marginTop: "15px",
             // backdropFilter: 'blur(30px)',

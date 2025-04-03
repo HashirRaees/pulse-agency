@@ -138,7 +138,7 @@ const Projects = () => {
         {/* project section left box  */}
         <div className="mx-auto flex w-[90%] items-center justify-center rounded-md p-5 md:mx-0 md:w-[40%] md:p-0 ">
           {tabImage === 0 && (
-            <Image src={"/mob-app01.png"} loading="eager" alt="mob1" width={200} height={200} />
+            <Image src={"/high-res.png"} loading="eager" alt="mob1" width={200} height={200} />
           )}
           {tabImage === 1 && (
             <Image src={"/mob-app03.png"} loading="eager" alt="mob2" width={200} height={200} />

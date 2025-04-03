@@ -72,7 +72,7 @@ export default function IanSection(){
                 {/* right image section */}
                 <div className="bg-gray-500 md:h-[670px] md:mt-0 -mt-10 h-[22%] w-full md:w-[40%]">
                     <Image 
-                    src={"/images/about_page_images/ian-slater-about.jpg"} 
+                    src={"/images/about_page_images/about-sec-pic.jpg"} 
                     height={0} width={670} alt="ian slater"
                     >
                     </Image>

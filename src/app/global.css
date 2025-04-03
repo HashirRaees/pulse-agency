@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
 body {
   margin: 0;
   padding: 0;
@@ -35,7 +40,6 @@ body {
   display: inline-block;
   background-repeat: no-repeat;
 }
-
 @media (max-width: 600px) {
   .ct-banner:before {
     content: "" !important;
@@ -45,6 +49,9 @@ body {
     box-shadow: -20px 0px 100px 100px #2b7d9d !important;
     opacity: 0 !important;
     display: hidden !important;
+  }
+  .cro-home{
+    background-attachment: unset !important;
   }
   .cro-calculator{
       height: 1169px;

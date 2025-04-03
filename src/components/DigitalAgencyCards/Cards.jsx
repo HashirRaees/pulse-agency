@@ -246,7 +246,7 @@ const Cards = () => {
                   <div
                     className="flex transform flex-col items-center justify-between gap-8 rounded-xl p-3 transition-transform duration-700 ease-in-out hover:scale-105 md:mt-0 md:translate-y-22 md:p-8 lg:flex-row"
                     style={{
-                      backgroundImage: `url('/images/services_page_images/fourth-section-img.png')`,
+                      backgroundImage: `url('/images/services_page_images/02.png')`,
                       backgroundSize: "cover",
                     }}
                   >

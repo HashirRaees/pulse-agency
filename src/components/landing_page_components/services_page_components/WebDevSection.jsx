@@ -14,12 +14,12 @@ const WebDevSection = () => {
           backgroundImage: "url('/images/services_page_images/circle.png')",
           backgroundSize: "cover",
         }}
-        className="h-[143px] md:-translate-y-[50%] -translate-y-[95%] md:h-[704px]"
+        className="h-[143px] md:-translate-y-[50%] -translate-y-[89%] md:h-[704px]"
       />
 
       {/* Content Section */}
       <div
-        className="absolute z-10 flex w-full translate-y-[-20%] flex-col items-center justify-center md:top-5 md:translate-y-0 "
+        className="absolute z-10 flex w-full translate-y-[-19%] flex-col items-center justify-center md:top-5 md:translate-y-0 "
         style={{
           // backgroundColor: '#040117',
           backgroundSize: "cover",
@@ -40,7 +40,7 @@ const WebDevSection = () => {
           <div
             className="flex transform flex-col items-center justify-between gap-8 p-8 transition-transform duration-700 ease-in-out hover:scale-105 lg:flex-row"
             style={{
-              backgroundImage: `url('/images/services_page_images/second-section-img.png')`,
+              backgroundImage: `url('/images/services_page_images/03.png')`,
               backgroundSize: "cover",
             }}
           >

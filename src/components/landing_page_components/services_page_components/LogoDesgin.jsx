@@ -8,7 +8,7 @@ import Link from "next/link";
 const LogoDesgin = () => {
   return (
     <main
-      className="relative overflow-hidden pb-10 text-white md:translate-y-[-20%]"
+      className="relative overflow-hidden pb-10 md:translate-y-[-20%]"
       style={{
         backgroundColor: "#040117",
         backgroundSize: "cover",
@@ -26,7 +26,7 @@ const LogoDesgin = () => {
         <div
           className="flex transform flex-col items-center justify-between gap-8 rounded-xl p-8 transition-transform duration-700 ease-in-out hover:scale-105 lg:flex-row"
           style={{
-            backgroundImage: `url('/images/services_page_images/fourth-section-img.png')`,
+            backgroundImage: `url('/images/services_page_images/02.png')`,
             backgroundSize: "cover",
           }}
         >
