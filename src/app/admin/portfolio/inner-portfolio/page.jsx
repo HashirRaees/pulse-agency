@@ -4,6 +4,7 @@ import DefaultLayout from "@/components/Layouts/DefaultLayout";
 import Breadcrumb from "@/components/Breadcrumbs/Breadcrumb";
 import { baseURL, FireApi, token } from "../../../../../utils/useRequest";
 import { Box, Modal } from "@mui/material";
+import Image from "next/image";
 
 const Page = () => {
   const [selectedPage, setSelectedPage] = useState("");
@@ -41,7 +42,8 @@ const Page = () => {
       setSectionKey(res?.data?.component?.child_components[0]?.section || "");
       setContent(res?.data?.component?.child_components[0]?.content || "");
       setImage(res?.data?.component?.child_components[0]?.pictures[0] || "");
-      setChildId(res?.data?.component?.child_components[0]?._id || "");
+      setChildId(res?.data?.component?._id || "");
+      console.log(res?.data?.component?._id, "childId");
 
       console.log(res);
     } catch (err) {
@@ -52,21 +54,41 @@ const Page = () => {
   const handleUpdatePortfolio = async (e) => {
     e.preventDefault();
 
-    const form = new FormData(e.target);
-    const formData = {
-      name: form.get("name"),
-      id: childId,
-      section: sectionKey,
-      content: form.get("content"),
-      page: selectedPage,
-    };
+    // Create a proper FormData object
+    const formData = new FormData();
+
+    // Append all the necessary fields
+    formData.append("name", name);
+    formData.append("id", childId);
+    formData.append("section", sectionKey);
+    formData.append("content", content);
+    formData.append("page", selectedPage);
+    formData.append("index", "0");
+
+    if (pictures && pictures instanceof File) {
+      formData.append("file", pictures);
+    }
 
     try {
-      const res = await FireApi("component/update", "PUT", formData);
-      window.location.reload();
-      handleClose();
+      const response = await fetch(`${baseURL}/component/update`, {
+        method: "PUT",
+        body: formData,
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
+
+      if (response.ok) {
+        alert("Portfolio updated successfully!");
+        handleClose();
+        window.location.reload();
+      } else {
+        alert("Failed to update portfolio");
+        console.log("Error updating portfolio:", await response.json());
+      }
     } catch (error) {
-      console.log(error);
+      console.log("Error in update request:", error);
+      alert("Error updating portfolio");
     }
   };
 
@@ -74,6 +96,9 @@ const Page = () => {
     e.preventDefault();
     const res = FireApi(`component/delete/${childId}`, "DELETE");
     console.log(res);
+    alert("Portfolio deleted successfully!");
+    handleClose();
+    window.location.reload();
   };
 
   useEffect(() => {
@@ -102,7 +127,7 @@ const Page = () => {
   };
 
   const handleFileChange = (e) => {
-    setPictures(e.target.files);
+    setPictures(e.target.files[0]);
   };
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -153,7 +178,6 @@ const Page = () => {
       }
     } catch (err) {
       alert("Error submitting form:", err.message);
-      // console.log('Error submitting form:', err);
     }
   };
 
@@ -169,7 +193,9 @@ const Page = () => {
           <form className="space-y-4" onSubmit={handleFormSubmit}>
             {/* Dropdown for Page Selection */}
             <div>
-              <label className="text-gray-700">Select Portfolio Tab Name:</label>
+              <label className="text-gray-700">
+                Select Portfolio Tab Name:
+              </label>
               <select
                 className="mt-1 w-full rounded border p-2 text-black"
                 onChange={(e) => setSelectedPage(e.target.value)}
@@ -179,7 +205,11 @@ const Page = () => {
                   pages
                     .filter((page) => page.name.startsWith("Portfolio"))
                     .map((page) => (
-                      <option key={page._id} value={page._id} style={{color:'black'}}>
+                      <option
+                        key={page._id}
+                        value={page._id}
+                        style={{ color: "black" }}
+                      >
                         {page.name}
                       </option>
                     ))
@@ -191,7 +221,9 @@ const Page = () => {
 
             {/* Dropdown for Component Selection */}
             <div>
-              <label className="text-gray-700">Select Your Portfolio Component:</label>
+              <label className="text-gray-700">
+                Select Your Portfolio Component:
+              </label>
               <select
                 className="mt-1 w-full rounded border p-2 text-black"
                 onChange={(e) => setComponentId(e.target.value)}
@@ -199,7 +231,11 @@ const Page = () => {
               >
                 {readComponents.length > 0 ? (
                   readComponents.map((page) => (
-                    <option key={page._id} value={page._id} style={{color:'black'}}>
+                    <option
+                      key={page._id}
+                      value={page._id}
+                      style={{ color: "black" }}
+                    >
                       {page.name}
                     </option>
                   ))
@@ -387,7 +423,7 @@ const Page = () => {
             <div>
               <label className="text-gray-700">Content</label>
               <textarea
-                className="mt-1 w-full rounded border p-2"
+                className="mt-1 w-full rounded border p-2 text-black"
                 placeholder="Enter content..."
                 value={content}
                 onChange={(e) => setContent(e.target.value)}
@@ -397,11 +433,7 @@ const Page = () => {
 
             {/* File Upload */}
             <div>
-              <img
-                src={imageComp}
-                alt=""
-                style={{ height: "70px", width: "70px" }}
-              />
+              {" "}
               <label className="text-gray-700">Upload Pictures:</label>
               <input
                 type="file"
@@ -409,6 +441,10 @@ const Page = () => {
                 className="mt-1 w-full rounded border p-2"
                 onChange={handleFileChange}
               />
+              <p className="text-sm text-gray-500">
+                Image should be less than 1MB in size & format should be PNG,
+                JPG, JPEG
+              </p>
             </div>
 
             <button
@@ -420,7 +456,7 @@ const Page = () => {
 
             <button
               type="submit"
-              className="rounded bg-blue-500 px-4 py-2 text-white mr-2"
+              className="mr-2 rounded bg-blue-500 px-4 py-2 text-white"
             >
               Update Portfolio
             </button>

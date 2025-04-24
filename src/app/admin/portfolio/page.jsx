@@ -37,9 +37,7 @@ const Portfolio = () => {
   }, []);
 
   const handleFileChange = (e) => {
-    // setPictures(e.target.files);
-    setImage(e.target.files[0]);
-    console.log(e.target.files[0], 'imageeeeeeeeeeeeeeeeeeeeeeeee');
+    setPictures(e.target.files);
   };
 
   const handleFormSubmit = async (e) => {
@@ -51,16 +49,17 @@ const Portfolio = () => {
     }
 
     const formData = new FormData();
-
     formData.append("page", selectedPage);
     formData.append("name", name);
     formData.append("section", sectionKey);
     formData.append("header", sectionHeading);
     formData.append("content", content);
     formData.append("is_child", false);
-
-    for (let i = 0; i < pictures.length; i++) {
-      formData.append("file", pictures[i]);
+  
+    if (pictures && pictures.length > 0) {
+      for (let i = 0; i < pictures.length; i++) {
+        formData.append("file", pictures[i]);
+      }
     }
 
     try {
@@ -80,14 +79,13 @@ const Portfolio = () => {
         setSectionKey("");
         setSectionHeading("");
         setContent("");
-        setPictures([]);
+        setPictures("");
       } else {
         console.log("Error submitting form:", response.error);
         alert("Something Went Wrong! Please try again.");
       }
     } catch (err) {
       alert("Something Went Wrong! Please try again:", err.message);
-      // console.log('Error submitting form:', err);
     }
   };
 
