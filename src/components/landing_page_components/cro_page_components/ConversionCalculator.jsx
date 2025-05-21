@@ -1,5 +1,5 @@
-// "use client";
-// import { useState, useEffect } from "react";
+"use client";
+import { useState, useEffect,useRef } from "react";
 import {
   Card,
   CardContent,
@@ -11,6 +11,8 @@ import {
   Grid,
   Box,
 } from "@mui/material";
+import Link from "next/link";
+import PrimaryBtn from "../PrimaryBtns/PrimaryBtn";
 // import { AiOutlineInfoCircle } from "react-icons/ai";
 // import { Reveal } from "@/utils/Reveal";
 
@@ -139,7 +141,35 @@ export default function ConversionCalculator() {
   //     </Typography>
   //   </Paper>
   // );
+//  const [showForm, setShowForm] = useState(false);
+//   const calendlyContainerRef = useRef(null);
 
+//   const toggleForm = () => {
+//     setShowForm(!showForm);
+//   };
+
+//   useEffect(() => {
+//     if (showForm) {
+//       const container = calendlyContainerRef.current;
+
+//       if (container) {
+//         container.innerHTML = "";
+
+//         const div = document.createElement("div");
+//         div.className = "calendly-inline-widget";
+//         // div.dataset.url = "https://calendly.com/ianpslater/20min";
+//         div.style.minWidth = "500px";
+//         div.style.height = "1200px";
+//         container.appendChild(div);
+
+//         const script = document.createElement("script");
+//         script.type = "text/javascript";
+//         // script.src = "https://assets.calendly.com/assets/external/widget.js";
+//         script.async = true;
+//         container.appendChild(script);
+//       }
+//     }
+//   }, [showForm]);
   return (
     <>
      <div
@@ -149,7 +179,7 @@ export default function ConversionCalculator() {
         }}
         className="h-[43vh] z-99 translate-y-[-51%] transform md:h-[500px] md:translate-y-[-65%]"
       />
-    <Container id="cal" className="relative bottom-[380px] mt-10" maxWidth="lg" sx={{ bgcolor: "transparent", py: 6 }}>
+    <Container id="cal" className="relative md:h-[660px] h-[1200px] bottom-[380px] mt-10" maxWidth="lg" sx={{ bgcolor: "transparent", py: 6 }}>
       <div className="md:mb-8 mb-3 flex flex-col items-center justify-center text-center">
         <h2 className="mb-2 text-center text-2xl font-bold tracking-wide md:text-5xl">
           Calculate The Value of CRO
@@ -169,6 +199,48 @@ export default function ConversionCalculator() {
         style={{ border: "none",  borderRadius: "10px" }}
     />
       </div>
+
+      {/* button below calculator */}
+      <div className="h-24 md:w-[93%] flex justify-center items-center w-[98%] md:-translate-y-[270%] md:mt-0 mt-5">
+         <Link href={"https://calendly.com/ianpslater/20min"} target="_blank">
+          <button
+              className="poppins-regular md:text-xl flex items-center justify-center rounded-full border-none text-white bg-my-blue-gradient md:px-8 px-4 md:py-4 py-3 outline-none ease-in-out"
+           >
+             Book your free 20 min consultation
+          </button>
+          </Link>
+         </div>
+
+        {/* fixed button */}
+      <div className="md:inline hidden fixed bottom-36 md:bottom-5 right-3 md:left-6 z-[9999]">
+        <Link href={"https://calendly.com/ianpslater/20min"} target="_blank">
+        <PrimaryBtn text={"Get My Free CRO Blueprint"} />
+        </Link>
+      </div>
+       {/* {showForm && (
+                <div className="fixed inset-0 z-50 flex items-center justify-center overflow-hidden bg-gray-500 bg-opacity-50">
+                  <div className="relative h-[70vh] flex items-center w-full max-w-2xl rounded-lg bg-white p-6 md:w-[85%] lg:w-[65%]">
+                    <div
+                      onClick={toggleForm}
+                      className="absolute right-3 top-2 cursor-pointer px-2 text-2xl font-bold text-blue-500"
+                    > */}
+                      {/* <IoCloseSharp /> */}
+                    {/* </div> */}
+                    {/* <h2 className="mb-4 text-xl">Schedule Your Meeting</h2> */}
+                    {/* <div
+                      className="h-[60vh] overflow-x-auto overflow-y-auto sm:overflow-x-hidden"
+                      ref={calendlyContainerRef}
+                    ></div> */}
+                     {/* <form action="" className="flex flex-col">
+                      <label className="text-black-2 text-xl" htmlFor="name">Name:</label><br />
+                      <input className="md:w-[600px]" type="name" />
+
+                       <label className="text-black-2 text-xl" htmlFor="email">Email:</label><br />
+                      <input className="md:w-[600px]" type="email" />
+                    </form>
+                  </div>
+                </div>
+        )} */}
       {/* <Grid container spacing={4}>
         <Grid item xs={12} md={6}>
           <Card sx={{ bgcolor: "transparent", color: "white" }}>

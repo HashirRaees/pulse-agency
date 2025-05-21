@@ -266,7 +266,7 @@ const Footer = () => {
                 <IoCloseSharp />
               </div>
 
-              <h2 className="mb-4 text-xl">Schedule Your Meeting</h2>
+              <h2 className="mb-4 text-black-2 text-xl">Schedule Your Meeting</h2>
               <div
                 className="h-[60vh] overflow-x-auto overflow-y-auto sm:overflow-x-hidden"
                 ref={calendlyContainerRef}

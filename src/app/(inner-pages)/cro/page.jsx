@@ -12,6 +12,11 @@ import FAQSection from "@/components/landing_page_components/cro_page_components
 import Calender from "@/components/Calender/Calender";
 import ConversionCalculator from "@/components/landing_page_components/cro_page_components/ConversionCalculator";
 import BrandLogoCards from "@/components/ChoosePlus/BrandLogoCards";
+import VideoSection from "@/components/landing_page_components/cro_page_components/VideoSection";
+import CroProcess1 from "@/components/landing_page_components/cro_page_components/CroProcess1";
+import WhoWeWork from "@/components/landing_page_components/cro_page_components/WhoWeWork";
+import Pricing from "@/components/landing_page_components/cro_page_components/Pricing"
+import PulseDifferent from "@/components/landing_page_components/cro_page_components/PulseDifferent";
 const page = () => {
   return (
     <main className="theme_bg_color">
@@ -32,13 +37,18 @@ const page = () => {
         style={{ border: "none", borderRadius: "10px" }}
     />
     </div> */}
-    <div className='relative md:bottom-[140px] md:-top-[80px] top-[70px]'>
-      <Expertise />
-      </div>
-      <SecondSection />
+    {/* <div className='md:-translate-y-[70%] -translate-y-[25%]'> */}
+      {/* <Expertise /> */}
+      <WhoWeWork/>
+      {/* </div> */}
+      {/* <SecondSection /> */}
+      <VideoSection/>
       <BrandLogoCards/>
-      <WhyChooseUs />
-      <CROProcess />
+      <Pricing/>
+      <PulseDifferent/>
+      {/* <WhyChooseUs /> */}
+      {/* <CROProcess /> */}
+      <CroProcess1/>
       <Results />
       <Testimonials />
       <FAQSection />
