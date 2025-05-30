@@ -13,6 +13,7 @@
     "@emotion/styled": "^11.11.5",
     "@mui/lab": "^5.0.0-alpha.170",
     "@mui/material": "^5.15.20",
+    "@remixicon/react": "^4.6.0",
     "aos": "^2.3.4",
     "apexcharts": "^4.0.0",
     "bcryptjs": "^2.4.3",

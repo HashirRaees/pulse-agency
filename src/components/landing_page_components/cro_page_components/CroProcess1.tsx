@@ -21,7 +21,7 @@ const CroProcess1 = () => {
         {/* First row */}
         <div className="flex w-full flex-wrap justify-center gap-6 md:gap-6">
           {/* card one  */}
-          <div className="border-1 cursor-default duration-400  flex min-h-[80px]  w-full flex-col justify-center items-center gap-3 rounded-2xl border bg-white bg-opacity-10 p-5 backdrop-blur-md transition hover:scale-105 md:h-[280px]  md:w-[20%]  md:p-4">
+          <div className="border-1 border-right border-l-0 border-t-0 md:border-b-0 cursor-default duration-400  flex min-h-[80px]  w-full flex-col justify-center items-center gap-3 border p-5 md:h-[280px] md:w-[20%] md:p-4">
             <div className="w-full justify-center flex h-60px]">
             <Image
               src={"/images/cro_page_images/Book-your-free-CRO-audit.png"}
@@ -38,7 +38,7 @@ const CroProcess1 = () => {
           </div>
 
           {/* card two  */}
-          <div className="border-1 cursor-default duration-400 items-center flex min-h-[80px]  w-full flex-col justify-center gap-3 rounded-2xl border bg-white bg-opacity-10 p-5 backdrop-blur-md transition hover:scale-105 md:h-[280px]  md:w-[20%]  md:p-4">
+          <div className="border-1 border-right border-l-0 border-t-0 md:border-b-0 cursor-default duration-400  flex min-h-[80px]  w-full flex-col justify-center items-center gap-3 border p-5 md:h-[280px] md:w-[20%] md:p-4">
             <div className="w-full justify-center flex h-60px]">
             <Image
               src={"/images/cro_page_images/We-analyze-your-site,-data-&-visitor-behavior.png"}
@@ -55,7 +55,7 @@ const CroProcess1 = () => {
           </div>
 
           {/* card three  */}
-          <div className="border-1 cursor-default duration-400 flex items-center min-h-[80px]  w-full flex-col justify-center gap-3 rounded-2xl border bg-white bg-opacity-10 p-5 backdrop-blur-md transition hover:scale-105 md:h-[280px]  md:w-[20%]  md:p-4">
+          <div className="border-1 border-right border-l-0 border-t-0 md:border-b-0 cursor-default duration-400 flex min-h-[80px]  w-full flex-col justify-center items-center gap-3 border p-5 md:h-[280px] md:w-[20%] md:p-4">
             <div className="w-full justify-center flex h-60px]">
             <Image
               src={"/images/cro_page_images/We-test-&-implement-changes.png"}
@@ -72,7 +72,7 @@ const CroProcess1 = () => {
           </div>
 
           {/* card four */}
-          <div className="border-1 cursor-default duration-400 flex items-center min-h-[80px]  w-full flex-col justify-center gap-3 rounded-2xl border bg-white bg-opacity-10 p-5 backdrop-blur-md transition hover:scale-105 md:h-[280px]  md:w-[20%] md:p-4">
+          <div className="flex min-h-[80px]  w-full flex-col justify-center items-center gap-3 p-5 md:h-[280px] md:w-[20%] md:p-4">
             <div className="w-full justify-center flex h-60px]">
             <Image
               src={"/images/cro_page_images/You-get-more-revenue,-same-traffic.png"}

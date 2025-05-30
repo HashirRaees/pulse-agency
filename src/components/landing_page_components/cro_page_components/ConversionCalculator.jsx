@@ -181,7 +181,7 @@ export default function ConversionCalculator() {
       />
     <Container id="cal" className="relative md:-mt-[300px] md:h-[660px] h-[1200px] bottom-[380px] mt-10" maxWidth="lg" sx={{ bgcolor: "transparent", py: 6 }}>
       <div className="md:mb-8 mb-3 flex flex-col items-center justify-center text-center">
-        <h2 className="mb-2 text-center text-2xl font-bold tracking-wide md:text-5xl">
+        <h2 className="mb-2 text-center poppins-medium text-2xl font-bold tracking-wide md:text-5xl">
           Calculate The Value of CRO
         </h2>
         {/* <p>Reach your revenue goals with CRO.</p> */}
@@ -204,7 +204,7 @@ export default function ConversionCalculator() {
       <div className="h-24 md:w-[93%] flex justify-center items-center w-[98%] md:-translate-y-[270%] md:mt-0 mt-5">
          <Link href={"https://calendly.com/ianpslater/20min"} target="_blank">
           <button
-              className="poppins-regular md:text-xl flex items-center justify-center rounded-full border-none text-white bg-my-blue-gradient md:px-8 px-4 md:py-4 py-3 outline-none ease-in-out"
+              className="poppins-regular hvr-ripple-out md:text-xl flex items-center justify-center rounded-full border-none text-white bg-my-blue-gradient md:px-8 px-4 md:py-4 py-3 outline-none ease-in-out"
            >
              Book your free 20 min consultation
           </button>

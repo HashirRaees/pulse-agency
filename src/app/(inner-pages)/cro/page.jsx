@@ -1,10 +1,10 @@
 import React from "react";
 import HeroSection from "../../../components/landing_page_components/cro_page_components/HeroSection";
-import SecondSection from "../../../components/landing_page_components/cro_page_components/SecondSection";
-import WhyChooseUs from "../../../components/landing_page_components/cro_page_components/WhyChooseUs";
-import CROProcess from "../../../components/landing_page_components/cro_page_components/CROProcess";
-import Expertise from "../../../components/landing_page_components/cro_page_components/Expertise";
-import Results from "../../../components/landing_page_components/cro_page_components/Results";
+// import SecondSection from "../../../components/landing_page_components/cro_page_components/SecondSection";
+// import WhyChooseUs from "../../../components/landing_page_components/cro_page_components/WhyChooseUs";
+// import CROProcess from "../../../components/landing_page_components/cro_page_components/CROProcess";
+// import Expertise from "../../../components/landing_page_components/cro_page_components/Expertise";
+// import Results from "../../../components/landing_page_components/cro_page_components/Results";
 import Testimonials from "@/components/landing_page_components/app_page_components/Testimonials";
 // import OurBlog from "@/components/landing_page_components/app_page_components/OurBlog";
 import Footer from "@/components/layout/Footer";
@@ -16,7 +16,8 @@ import VideoSection from "@/components/landing_page_components/cro_page_componen
 import CroProcess1 from "@/components/landing_page_components/cro_page_components/CroProcess1";
 import WhoWeWork from "@/components/landing_page_components/cro_page_components/WhoWeWork";
 import Pricing from "@/components/landing_page_components/cro_page_components/Pricing"
-import PulseDifferent from "@/components/landing_page_components/cro_page_components/PulseDifferent";
+// import PulseDifferent from "@/components/landing_page_components/cro_page_components/PulseDifferent";
+import Team from "@/components/landing_page_components/cro_page_components/Team";
 const page = () => {
   return (
     <main className="theme_bg_color">
@@ -39,17 +40,18 @@ const page = () => {
     </div> */}
     {/* <div className='md:-translate-y-[70%] -translate-y-[25%]'> */}
       {/* <Expertise /> */}
+      <BrandLogoCards/>
       <WhoWeWork/>
       {/* </div> */}
       {/* <SecondSection /> */}
       <VideoSection/>
-      <BrandLogoCards/>
       <Pricing/>
-      <PulseDifferent/>
+      {/* <PulseDifferent/> */}
       {/* <WhyChooseUs /> */}
       {/* <CROProcess /> */}
+      <Team/>
       <CroProcess1/>
-      <Results />
+      {/* <Results /> */}
       <Testimonials />
       <FAQSection />
       {/* <OurBlog /> */}

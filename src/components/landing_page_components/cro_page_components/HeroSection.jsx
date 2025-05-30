@@ -6,7 +6,7 @@ import Image from "next/image";
 // import { Reveal } from '@/utils/Reveal'
 import PrimaryBtn from "../PrimaryBtns/PrimaryBtn";
 import { motion } from "motion/react";
-import HeroForm from "@/components/landing_page_components/HeroForm";
+// import HeroForm from "@/components/landing_page_components/HeroForm";
 
 const HeroSection = () => {
   return (
@@ -65,7 +65,7 @@ const HeroSection = () => {
         </motion.div>
 
         {/* hero form  */}
-        <motion.div
+        {/* <motion.div
           initial={{
             scale: 0.1,
             opacity: 0,
@@ -83,7 +83,7 @@ const HeroSection = () => {
           className="border-1 absolute right-0 z-20 w-full max-w-md rounded-3xl border-white bg-black bg-opacity-30 p-6 text-white shadow-xl backdrop-blur-md md:mt-10 md:w-[40%] md:px-8 md:py-3"
         >
           <HeroForm />
-        </motion.div>
+        </motion.div> */}
       </div>
     </main>
   );
