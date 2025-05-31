@@ -77,7 +77,7 @@
 
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectCoverflow, Autoplay } from 'swiper/modules';
+import { EffectCoverflow, Autoplay } from 'swiper';
 
 // Import Swiper styles
 import 'swiper/css';
