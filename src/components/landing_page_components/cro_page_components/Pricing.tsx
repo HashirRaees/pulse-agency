@@ -26,7 +26,7 @@ const Pricing = () => {
 
           {/* right text */}
           <div className="md:w-[50%] w-full h-[50%] gap-5 md:h-[90%] flex flex-col">
-            <h1 className="md:text-5xl text-2xl mt-7 font-bold tracking-normal uppercase">Pricing Transparency</h1>
+            <h1 className="md:text-5xl text-2xl mt-7 font-bold tracking-normal capitalize">Pricing Transparency</h1>
             <h2 className="md:text-xl text-sm">Our pricing is customized according to your website traffic, project complexity, and specific business goals.
               We don’t believe in one-size-fits-all plans — instead, we tailor our approach to fit your needs.
               Whether you're a startup or an established brand, we align pricing with the value we deliver.
@@ -74,7 +74,7 @@ const Pricing = () => {
         {/* left text */}
         <div className="w-full md:gap-10 flex flex-col-reverse md:flex-row justify-between  h-[1000px] md:h-[700px]">
           <div className="md:w-[49%] md:ml-10 w-full h-[50%] gap-5 md:h-[90%] flex flex-col">
-            <h1 className="md:text-5xl text-2xl mt-10 font-bold tracking-normal uppercase"> What Makes Pulse Different</h1>
+            <h1 className="md:text-5xl text-2xl mt-10 font-bold tracking-normal capitalize"> What Makes Pulse Different</h1>
             <h2 className="md:text-xl text-sm"> Pulse Marketing is more than a web design agency—we build digital solutions that drive real business results.
               Our approach is rooted in strategy, speed,
               and custom development. We don’t rely on templates or shortcuts. Every project is built to match your goals,

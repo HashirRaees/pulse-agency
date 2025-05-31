@@ -16,6 +16,8 @@ import VideoSection from "@/components/landing_page_components/cro_page_componen
 import CroProcess1 from "@/components/landing_page_components/cro_page_components/CroProcess1";
 import WhoWeWork from "@/components/landing_page_components/cro_page_components/WhoWeWork";
 import Pricing from "@/components/landing_page_components/cro_page_components/Pricing"
+import BeforeAfterSlider from "@/components/landing_page_components/cro_page_components/BeforeAfterSlider";
+// import BeforeAfterSlider1 from "@/components/landing_page_components/cro_page_components/BeforeAfterSlider";
 // import PulseDifferent from "@/components/landing_page_components/cro_page_components/PulseDifferent";
 import Team from "@/components/landing_page_components/cro_page_components/Team";
 const page = () => {
@@ -51,6 +53,7 @@ const page = () => {
       {/* <CROProcess /> */}
       <Team/>
       <CroProcess1/>
+      <BeforeAfterSlider/>
       {/* <Results /> */}
       <Testimonials />
       <FAQSection />
