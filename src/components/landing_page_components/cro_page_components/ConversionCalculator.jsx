@@ -181,7 +181,7 @@ export default function ConversionCalculator() {
       />
     <Container id="cal" className="relative md:-mt-[300px] md:h-[660px] h-[1200px] bottom-[380px] mt-10" maxWidth="lg" sx={{ bgcolor: "transparent", py: 6 }}>
       <div className="md:mb-8 mb-3 flex flex-col items-center justify-center text-center">
-        <h2 className="mb-2 text-center poppins-medium text-xl font-bold tracking-wide md:text-5xl">
+        <h2 className="mb-2 text-center poppins-medium text-2xl font-bold tracking-wide md:text-5xl">
           Calculate The Value of CRO
         </h2>
         {/* <p>Reach your revenue goals with CRO.</p> */}
