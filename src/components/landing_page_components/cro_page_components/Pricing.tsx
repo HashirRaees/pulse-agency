@@ -4,7 +4,7 @@ import React from "react";
 const Pricing = () => {
   return (
     <>
-      <main className="mx-auto md:mt-0 -mt-24 flex flex-col w-full items-center md:gap-0 gap-6 px-4 py-10 md:w-[1200px] md:px-0 md:py-0">
+      <main className="mx-auto md:mt-0 -mt-34 flex flex-col w-full items-center md:gap-0 gap-6 px-4 py-10 md:w-[1200px] md:px-0 md:py-0">
         {/* heading */}
         {/* <div className="md:w-[1200px] w-full h-[80px] md:h-[50px] flex items-center justify-center">
           <h1 className="md:text-8xl uppercase text-3xl font-bold">Pricing Transparency</h1>
