@@ -9,7 +9,7 @@ const WhoWeWork = () => {
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
     }}
-     className="w-full h-[180px] md:h-[600px] md:mb-24 px-6 py-16 md:mx-auto md:mt-0 md:w-[1200px] md:px-0">
+     className="w-full h-[180px] md:h-[600px] md:mb-24 mb-16 mt-8 px-6 py-16 md:mx-auto md:mt-0 md:w-[1200px] md:px-0">
       {/* <div>
         <h1 className="mb-3 text-center text-3xl font-bold tracking-wide md:text-5xl">
           <span className="block md:inline">Who We Work With</span>

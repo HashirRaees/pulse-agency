@@ -14,7 +14,7 @@ export default function VideoSection(){
             backgroundSize:"cover",
             backgroundPositionY: "47%",
         }} 
-            className="md:h-[900px] laptop-pos md:w-[1435px] w-[360px] h-[600px] flex justify-center items-center"
+            className="md:h-[900px] md:mt-0 -mt-24 laptop-pos md:w-[1435px] w-[360px] h-[430px] flex justify-center items-center"
             >
             <iframe className="md:h-[600px] h-[185px] w-[78%] md:w-[66.4%]" width="560" height="315" src="https://www.youtube.com/embed/k2maqlyUuVw?si=8AzRyHI2-A9ehiC0"  title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
             </iframe>
