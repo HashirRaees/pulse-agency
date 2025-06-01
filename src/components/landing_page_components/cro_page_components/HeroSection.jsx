@@ -18,7 +18,7 @@ const HeroSection = () => {
         backgroundAttachment: "fixed",
         backgroundPosition: "center",
       }}
-      className="ct-banner md:pb-[150px] 2xl:pb-0"
+      className="ct-banner md:pb-[150px] pb-[80px] 2xl:pb-0"
     >
       <Navbar />
       <div className="relative mx-auto flex h-[75vh] w-[1200px] flex-row items-center justify-between md:h-[100vh] md:pt-[60px]">
@@ -38,7 +38,7 @@ const HeroSection = () => {
             ease: "easeInOut",
           }}
           viewport={{ once: false, amount: 0.2 }}
-          className="-mt-18 w-[50%] flex-col px-8  md:mt-0 md:px-0"
+          className="-mt-4 w-[50%] flex-col px-8  md:mt-0 md:px-0"
         >
           <div className="mb-2 flex w-auto items-center gap-1">
             <Image
@@ -53,7 +53,7 @@ const HeroSection = () => {
 
           {/* heading main  */}
 
-          <h2 className="text-left text-4xl font-bold leading-tight md:text-7xl">
+          <h2 className="text-left text-2xl font-bold leading-tight md:text-7xl">
             Conversion Rate <br /> Optimization
           </h2>
           <h2 className="mt-5 text-xs md:text-2xl">Generate 30–70% More Revenue With the Same Traffic</h2>
