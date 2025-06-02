@@ -131,7 +131,7 @@ const Pricing = () => {
           </div>
 
           {/* right image */}
-          <div className="md:w-[48%] md:-translate-y-[15%] h-[49%] w-full flex  md:h-full ">
+          <div className="md:w-[48%] md:-translate-y-[15.8%] h-[49%] w-full flex  md:h-full ">
             <Image
               src={"/images/cro_page_images/pulse-why.png"}
               height={100}
