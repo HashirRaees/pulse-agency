@@ -12,13 +12,12 @@ const HeroSection = () => {
   return (
     <main
       style={{
-        backgroundImage:
-          "url('/images/cro_page_images/cro-banner-min.jpg')",
+        backgroundImage: "url('/images/cro_page_images/cro-banner-min.jpg')",
         backgroundSize: "cover",
         backgroundAttachment: "fixed",
         backgroundPosition: "center",
       }}
-      className="ct-banner md:pb-[150px] pb-[80px] 2xl:pb-0"
+      className="ct-banner pb-[80px] md:pb-[150px] 2xl:pb-0"
     >
       <Navbar />
       <div className="relative mx-auto flex h-[75vh] w-[1200px] flex-row items-center justify-between md:h-[100vh] md:pt-[60px]">
@@ -56,16 +55,21 @@ const HeroSection = () => {
           <h2 className="text-left text-2xl font-bold leading-tight md:text-7xl">
             Conversion Rate <br /> Optimization
           </h2>
-          <h2 className="mt-5 text-xs md:text-2xl">Generate 30–70% More Revenue With the Same Traffic</h2>
+          <h2 className="mt-5 text-xs md:text-2xl">
+            Generate 30–70% More Revenue With the Same Traffic
+          </h2>
           <div className="mt-5">
-          <Link href={"https://calendly.com/ianpslater/20min"} target="_blank">
-          <PrimaryBtn text={"Book now"}/> 
-          </Link>
+            <Link
+              href={"https://calendly.com/ianpslater/20min"}
+              target="_blank"
+            >
+              <PrimaryBtn text={"Book now"} />
+            </Link>
           </div>
         </motion.div>
 
         {/* hero form  */}
-        {/* <motion.div
+        <motion.div
           initial={{
             scale: 0.1,
             opacity: 0,
@@ -80,10 +84,15 @@ const HeroSection = () => {
             ease: "easeInOut",
           }}
           viewport={{ once: false, amount: 0.2 }}
-          className="border-1 absolute right-0 z-20 w-full max-w-md rounded-3xl border-white bg-black bg-opacity-30 p-6 text-white shadow-xl backdrop-blur-md md:mt-10 md:w-[40%] md:px-8 md:py-3"
+          className="absolute -right-5 z-20"
         >
-          <HeroForm />
-        </motion.div> */}
+          <Image
+            src="/images/cro_page_images/cro-page-upper-min 1.png"
+            alt=""
+            height={100}
+            width={600}
+          />
+        </motion.div>
       </div>
     </main>
   );
