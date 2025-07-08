@@ -5,23 +5,23 @@ import HeroSection from "../../../components/landing_page_components/cro_page_co
 // import CROProcess from "../../../components/landing_page_components/cro_page_components/CROProcess";
 import Expertise from "../../../components/landing_page_components/cro_page_components/Expertise";
 // import Results from "../../../components/landing_page_components/cro_page_components/Results";
-import Testimonials from "@/components/landing_page_components/app_page_components/Testimonials";
-// import OurBlog from "@/components/landing_page_components/app_page_components/OurBlog";
-import Footer from "@/components/layout/Footer";
-import FAQSection from "@/components/landing_page_components/cro_page_components/CroFaq";
-import Calender from "@/components/Calender/Calender";
-import ConversionCalculator from "@/components/landing_page_components/cro_page_components/ConversionCalculator";
-import BrandLogoCards from "@/components/ChoosePlus/BrandLogoCards";
-// import VideoSection from "@/components/landing_page_components/cro_page_components/VideoSection";
-import CroProcess1 from "@/components/landing_page_components/cro_page_components/CroProcess1";
-// import WhoWeWork from "@/components/landing_page_components/cro_page_components/WhoWeWork";
-import Pricing from "@/components/landing_page_components/cro_page_components/Pricing"
-import BeforeAfterTabs from "@/components/landing_page_components/cro_page_components/BeforeAfterTabs";
-// import BeforeAfterSlider from "@/components/landing_page_components/cro_page_components/BeforeAfterSlider";
-// import BeforeAfterSlider1 from "@/components/landing_page_components/cro_page_components/BeforeAfterSlider";
-// import PulseDifferent from "@/components/landing_page_components/cro_page_components/PulseDifferent";
-import YoutubeReviews from "@/components/landing_page_components/cro_page_components/YoutubeReviews";
-import Team from "@/components/landing_page_components/cro_page_components/Team";
+import Testimonials from "../../../components/landing_page_components/app_page_components/Testimonials";
+// import OurBlog from "../components/landing_page_components/app_page_components/OurBlog";
+import Footer from "../../../components/layout/Footer";
+import FAQSection from "../../../components/landing_page_components/cro_page_components/CroFaq";
+import Calender from "../../../components/Calender/Calender";
+import ConversionCalculator from "../../../components/landing_page_components/cro_page_components/ConversionCalculator";
+import BrandLogoCards from "../../../components/ChoosePlus/BrandLogoCards";
+// import VideoSection from "../components/landing_page_components/cro_page_components/VideoSection";
+import CroProcess1 from "../../../components/landing_page_components/cro_page_components/CroProcess1";
+// import WhoWeWork from "../components/landing_page_components/cro_page_components/WhoWeWork";
+import Pricing from "../../../components/landing_page_components/cro_page_components/Pricing"
+import BeforeAfterTabs from "../../../components/landing_page_components/cro_page_components/BeforeAfterTabs";
+// import BeforeAfterSlider from "../components/landing_page_components/cro_page_components/BeforeAfterSlider";
+// import BeforeAfterSlider1 from "../components/landing_page_components/cro_page_components/BeforeAfterSlider";
+// import PulseDifferent from "../components/landing_page_components/cro_page_components/PulseDifferent";
+import YoutubeReviews from "../../../components/landing_page_components/cro_page_components/YoutubeReviews";
+import Team from "../../../components/landing_page_components/cro_page_components/Team";
 const page = () => {
   return (
     <main className="theme_bg_color">
