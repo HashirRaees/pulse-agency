@@ -32,7 +32,7 @@
     "next": "^14.2.4",
     "npm": "^10.9.0",
     "otp-input-react": "^0.3.0",
-    "point-fetch-react": "^1.0.0-beta.13",
+    "point-fetch-react": "1.0.0-beta.12",
     "react": "^18",
     "react-apexcharts": "^1.6.0",
     "react-dom": "^18",
