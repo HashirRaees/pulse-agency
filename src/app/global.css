@@ -1532,7 +1532,7 @@ section#pricing .ct-content .content-card .item:hover {
 #team .team-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 80px;
 }
 
 #team .team-wrapper .item {
