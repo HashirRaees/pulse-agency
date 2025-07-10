@@ -84,7 +84,7 @@ const HeroSection = () => {
             ease: "easeInOut",
           }}
           viewport={{ once: false, amount: 0.2 }}
-          className="absolute md:top-[240px] top-[350px] right-5 md:-right-5 z-20"
+          className="absolute md:mb-0 mb-7 md:top-[240px] top-[350px] right-5 md:-right-5 z-20"
         >
           <Image
             src="/images/cro_page_images/cro-page-upper-min 1.png"
