@@ -177,7 +177,7 @@ export default function ConversionCalculator() {
           backgroundImage: "url('/images/services_page_images/circle.png/')",
           backgroundSize: "cover",
         }}
-        className="h-[43vh] z-99 -translate-y-[51%] transform md:h-[700px] md:translate-y-[-65%]"
+        className="h-[43vh] md:mt-0 mt-[40px] z-99 -translate-y-[51%] transform md:h-[700px] md:translate-y-[-65%]"
       />
     <Container id="cal" className="relative md:-mt-[300px] md:h-[660px] h-[1200px] bottom-[380px] mt-18" maxWidth="lg" sx={{ bgcolor: "transparent", py: 6 }}>
       <div className="md:mb-8 mb-3 flex flex-col items-center justify-center text-center">

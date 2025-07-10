@@ -84,14 +84,14 @@ const HeroSection = () => {
             ease: "easeInOut",
           }}
           viewport={{ once: false, amount: 0.2 }}
-          className="absolute md:mb-0 mb-7 md:top-[240px] top-[350px] right-5 md:-right-5 z-20"
+          className="absolute md:top-[260px] top-[350px] right-5 md:-right-5 z-20"
         >
           <Image
             src="/images/cro_page_images/cro-page-upper-min 1.png"
             alt=""
             height={100}
             width={250}
-            className="md:w-[600px]"
+            className="md:w-[540px] md:mb-0 mb-8"
           />
         </motion.div>
       </div>
