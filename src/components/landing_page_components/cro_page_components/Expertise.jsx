@@ -109,10 +109,6 @@ const Expertise = () => {
             <Slider {...settings}>
                 {techSliderImage.map((item, index) => (
                     <motion.div 
-                    initial={{
-                      scale: 0.1,
-                      opacity: 0,
-                    }}
                     whileInView={{
                       scale: 1,
                       opacity: 1,

@@ -17,27 +17,27 @@ const HeroSection = () => {
         backgroundAttachment: "fixed",
         backgroundPosition: "center",
       }}
-      className="ct-banner pb-[70px] md:pb-[150px] 2xl:pb-0"
+      className="ct-banner pb-[70px] md:pb-[200px] 2xl:pb-0"
     >
       <Navbar />
-      <div className="relative mx-auto flex h-[75vh] w-[1200px] flex-row items-center justify-between md:h-[100vh] md:pt-[60px]">
+      <div className="relative mx-auto flex h-[75vh] w-[300px] md:w-[1200px] flex-col md:flex-row items-center justify-between md:h-[100vh] md:pt-[60px]">
         {/* hero heading  */}
-        <motion.div
-          initial={{
-            x: -300,
-            opacity: 0,
-          }}
-          whileInView={{
-            x: 0,
-            opacity: 1,
-          }}
-          transition={{
-            delay: 0.5,
-            duration: 0.5,
-            ease: "easeInOut",
-          }}
-          viewport={{ once: false, amount: 0.2 }}
-          className="-mt-4 w-[50%] flex-col px-8  md:mt-0 md:px-0"
+        <div
+          // initial={{
+          //   x: -300,
+          //   opacity: 0,
+          // }}
+          // whileInView={{
+          //   x: 0,
+          //   opacity: 1,
+          // }}
+          // transition={{
+          //   delay: 0.5,
+          //   duration: 0.5,
+          //   ease: "easeInOut",
+          // }}
+          // viewport={{ once: false, amount: 0.2 }}
+          className="mt-26 md:mx-0 md:ml-0 w-[100%] md:w-[50%] flex-col px-8  md:mt-0 md:px-0"
         >
           <div className="mb-2 flex w-auto items-center gap-1">
             <Image
@@ -66,7 +66,7 @@ const HeroSection = () => {
               <PrimaryBtn text={"Book now"} />
             </Link>
           </div>
-        </motion.div>
+        </div>
 
         {/* hero form  */}
         <motion.div
@@ -84,13 +84,14 @@ const HeroSection = () => {
             ease: "easeInOut",
           }}
           viewport={{ once: false, amount: 0.2 }}
-          className="absolute -right-5 z-20"
+          className="absolute md:top-[240px] top-[350px] right-5 md:-right-5 z-20"
         >
           <Image
             src="/images/cro_page_images/cro-page-upper-min 1.png"
             alt=""
             height={100}
-            width={600}
+            width={250}
+            className="md:w-[600px]"
           />
         </motion.div>
       </div>
