@@ -17,7 +17,7 @@ const HeroSection = () => {
         backgroundAttachment: "fixed",
         backgroundPosition: "center",
       }}
-      className="ct-banner pb-[70px] md:pb-[200px] 2xl:pb-0"
+      className="ct-banner pb-[90px] md:pb-[150px] 2xl:pb-0"
     >
       <Navbar />
       <div className="relative mx-auto flex h-[75vh] w-[300px] md:w-[1200px] flex-col md:flex-row items-center justify-between md:h-[100vh] md:pt-[60px]">
@@ -69,21 +69,21 @@ const HeroSection = () => {
         </div>
 
         {/* hero form  */}
-        <motion.div
-          initial={{
-            scale: 0.1,
-            opacity: 0,
-          }}
-          whileInView={{
-            scale: 1,
-            opacity: 1,
-          }}
-          transition={{
-            delay: 0.5,
-            duration: 0.5,
-            ease: "easeInOut",
-          }}
-          viewport={{ once: false, amount: 0.2 }}
+        <div
+          // initial={{
+          //   scale: 0.1,
+          //   opacity: 0,
+          // }}
+          // whileInView={{
+          //   scale: 1,
+          //   opacity: 1,
+          // }}
+          // transition={{
+          //   delay: 0.5,
+          //   duration: 0.5,
+          //   ease: "easeInOut",
+          // }}
+          // viewport={{ once: false, amount: 0.2 }}
           className="absolute md:top-[260px] top-[350px] right-5 md:-right-5 z-20"
         >
           <Image
@@ -93,7 +93,7 @@ const HeroSection = () => {
             width={250}
             className="md:w-[540px] md:mb-0 mb-8"
           />
-        </motion.div>
+        </div>
       </div>
     </main>
   );
