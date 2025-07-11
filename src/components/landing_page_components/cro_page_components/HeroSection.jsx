@@ -20,7 +20,7 @@ const HeroSection = () => {
       className="ct-banner pb-[120px] md:pb-[150px] 2xl:pb-0"
     >
       <Navbar />
-      <div className="relative mx-auto flex h-[75vh] w-[300px] md:w-[1200px] flex-col md:flex-row items-center justify-between md:h-[100vh] md:pt-[60px]">
+      <div className="relative mx-auto flex h-[75vh] w-[100%] md:w-[1200px] flex-col md:flex-row items-center justify-between md:h-[100vh] md:pt-[60px]">
         {/* hero heading  */}
         <div
           // initial={{
@@ -37,7 +37,7 @@ const HeroSection = () => {
           //   ease: "easeInOut",
           // }}
           // viewport={{ once: false, amount: 0.2 }}
-          className="mt-26 md:mx-0 md:ml-0 w-[100%] md:w-[50%] flex-col px-8  md:mt-0 md:px-0"
+          className="mt-28 md:mx-0 md:ml-0 w-[100%] md:w-[50%] flex-col px-8  md:mt-0 md:px-0"
         >
           <div className="mb-2 flex w-auto items-center gap-1">
             <Image
@@ -90,8 +90,8 @@ const HeroSection = () => {
             src="/images/cro_page_images/cro-page-upper-min 1.png"
             alt=""
             height={100}
-            width={250}
-            className="md:w-[540px] md:mb-0 mb-8"
+            width={320}
+            className="md:w-[540px]"
           />
         </div>
       </div>
