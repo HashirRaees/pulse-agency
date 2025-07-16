@@ -21,7 +21,7 @@ const HeroSection = () => {
       className="ct-banner pb-[250px] md:pb-[150px]"
     >
       <Navbar />
-      <div className="relative mx-auto  flex h-[60vh] w-[1200px] flex-row items-center justify-between md:h-[100vh] md:pt-[60px]">
+      <div className="relative mx-auto md:mt-0 pt-64 flex h-[60vh] w-[1200px] flex-row items-center justify-between md:h-[100vh] md:pt-[60px]">
         {/* hero heading  */}
         <motion.div
           initial={{
@@ -38,7 +38,7 @@ const HeroSection = () => {
             ease: "easeInOut",
           }}
           viewport={{ once: false, amount: 0.2 }}
-          className="mt-52 w-full flex-col px-6 md:mt-0 md:w-[47%] md:px-0"
+          className="w-full flex-col px-6 md:w-[50%] md:px-0"
         >
           <div className="mb-5 flex">
             <Link

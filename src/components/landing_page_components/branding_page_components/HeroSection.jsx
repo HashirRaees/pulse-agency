@@ -23,27 +23,27 @@ const HeroSection = () => {
           backgroundAttachment: "fixed",
           backgroundPosition: "center",
         }}
-        className="ct-banner pb-[200px]"
+        className="ct-banner pb-[150px] md:pb-[200px]"
       >
         <Navbar />
-        <div className="relative mx-auto  flex h-[75vh] w-[1200px] flex-row items-center justify-between md:h-[100vh] md:pt-[60px]">
+        <div className="relative mx-auto pt-[120px] flex h-[75vh] w-[1200px] flex-row items-center justify-between md:h-[100vh] md:pt-[60px]">
           {/* hero heading  */}
-          <motion.div
-            initial={{
-              x: -300,
-              opacity: 0,
-            }}
-            whileInView={{
-              x: 0,
-              opacity: 1,
-            }}
-            transition={{
-              delay: 0.5,
-              duration: 0.5,
-              ease: "easeInOut",
-            }}
-            viewport={{ once: false, amount: 0.2 }}
-            className="mt-24 md:w-[50%] flex-col px-8  md:mt-0 md:px-0"
+          <div
+            // initial={{
+            //   x: -300,
+            //   opacity: 0,
+            // }}
+            // whileInView={{
+            //   x: 0,
+            //   opacity: 1,
+            // }}
+            // transition={{
+            //   delay: 0.5,
+            //   duration: 0.5,
+            //   ease: "easeInOut",
+            // }}
+            // viewport={{ once: false, amount: 0.2 }}
+            className="md:w-[50%] flex-col px-8 md:px-0"
           >
             <div className="mb-5 flex">
             <Link
@@ -126,28 +126,28 @@ const HeroSection = () => {
               {/* <PrimaryBtn text={"Book now"} /> */}
             </Link>
           </div>
-          </motion.div>
+          </div>
 
           {/* hero form  */}
-          <motion.div
-            initial={{
-              scale: 0.1,
-              opacity: 0,
-            }}
-            whileInView={{
-              scale: 1,
-              opacity: 1,
-            }}
-            transition={{
-              delay: 0.5,
-              duration: 0.5,
-              ease: "easeInOut",
-            }}
-            viewport={{ once: false, amount: 0.2 }}
+          <div
+            // initial={{
+            //   scale: 0.1,
+            //   opacity: 0,
+            // }}
+            // whileInView={{
+            //   scale: 1,
+            //   opacity: 1,
+            // }}
+            // transition={{
+            //   delay: 0.5,
+            //   duration: 0.5,
+            //   ease: "easeInOut",
+            // }}
+            // viewport={{ once: false, amount: 0.2 }}
             className="border-1 absolute top-20 right-0 z-20 w-full max-w-md rounded-3xl border-white bg-black bg-opacity-30 p-6 text-white shadow-xl backdrop-blur-md md:mt-10 md:w-[40%] md:px-8 md:py-3"
           >
             <HeroForm />
-          </motion.div>
+          </div>
         </div>
       </main>
     </React.Fragment>

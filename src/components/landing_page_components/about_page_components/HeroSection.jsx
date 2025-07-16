@@ -130,13 +130,13 @@ const HeroSection = () => {
           backgroundAttachment: "fixed",
           backgroundPosition: "center",
         }}
-        className="relative pb-[370px] md:pb-[250px]"
+        className="relative pb-[400px] md:pb-[250px]"
       >
         <div className="absolute inset-0 bg-black/30 bg-opacity-50"></div>
 
         <Navbar />
         <div className="relative flex h-[90vh] w-full flex-col items-center justify-center md:h-[105vh]">
-          <div className="z-10 flex w-[80%] translate-y-[2.7rem] flex-col md:w-[45%] md:translate-y-[0rem]">
+          <div className="z-10 flex w-[80%] translate-y-[4.2rem] flex-col md:w-[45%] md:translate-y-[0rem]">
             <div className="mb-5 flex">
               <Link
                 href={

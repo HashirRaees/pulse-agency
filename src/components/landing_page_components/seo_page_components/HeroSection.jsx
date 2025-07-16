@@ -18,10 +18,10 @@ export default function HeroSection() {
         backgroundAttachment: "fixed",
         backgroundPosition: "center",
       }}
-      className="ct-banner pb-[200px] md:pb-[150px]"
+      className="ct-banner pb-[230px] md:pb-[150px]"
     >
       <Navbar />
-      <div className="relative mx-auto md:pt-0 pt-[170px] flex h-[70vh] w-[1200px] flex-row items-center justify-between px-4 md:h-[110vh] md:px-0">
+      <div className="relative mx-auto md:pt-0 pt-[220px] flex h-[70vh] w-[1200px] flex-row items-center justify-between px-4 md:h-[110vh] md:px-0">
         {/* hero heading */}
         <motion.div
           initial={{

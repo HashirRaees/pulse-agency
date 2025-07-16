@@ -151,7 +151,7 @@ const HeroSection = () => {
       >
         <Navbar />
         <div className="relative mx-auto flex h-[82vh] max-w-[1200px] flex-row items-center justify-center md:h-[85vh]">
-          <div className="absolute z-20 w-[100%] translate-y-34 flex-col px-6 md:translate-y-13 md:px-0">
+          <div className="absolute z-20 w-[100%] translate-y-[148px] flex-col px-6 md:translate-y-13 md:px-0">
             <div className="mb-5 flex">
             <Link
               href={
