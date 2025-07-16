@@ -191,16 +191,14 @@ const Pricing = () => {
         <div className="ct-content">
           <h4>Pricing Transparency</h4>
           <p>
-            Our pricing is customized according to your website traffic, project
-            complexity, and specific business goals. We don’t believe in
-            one-size-fits-all plans — instead, we tailor our approach to fit
-            your needs. Whether you're a startup or an established brand, we
-            align pricing with the value we deliver. Most of our clients
-            experience a return on investment (ROI) of 3 to 5 times within just
-            60 days. This rapid ROI highlights the effectiveness of our
-            strategies and execution. We focus on driving results that match
-            your business objectives. Let’s build a solution that scales with
-            your growth.
+          Our pricing is tailored based on your website traffic,
+           project complexity, and business goals—no fixed plans,
+            just personalized solutions.
+             Whether you're a startup or a growing brand, 
+             we align costs with the value we deliver. 
+             Most clients see 3–5x ROI within 60 days,
+              reflecting our results-driven approach. 
+              Let’s create a scalable solution that fuels your growth.
           </p>
           <div className="content-card">
             <div className="item">

@@ -2,6 +2,9 @@
 import React, { useState } from "react";
 import Navbar from "@/components/landing_page_components/Navbar";
 import Image from "next/image";
+import Link from "next/link";
+import { MdArrowForward } from "react-icons/md";
+import { FaStar } from "react-icons/fa";
 import PrimaryBtn from "../PrimaryBtns/PrimaryBtn";
 // import { Reveal } from '@/utils/Reveal'
 import { motion } from "motion/react";
@@ -20,7 +23,7 @@ const HeroSection = () => {
           backgroundAttachment: "fixed",
           backgroundPosition: "center",
         }}
-        className="ct-banner md:pb-[200px]"
+        className="ct-banner pb-[200px]"
       >
         <Navbar />
         <div className="relative mx-auto  flex h-[75vh] w-[1200px] flex-row items-center justify-between md:h-[100vh] md:pt-[60px]">
@@ -40,8 +43,40 @@ const HeroSection = () => {
               ease: "easeInOut",
             }}
             viewport={{ once: false, amount: 0.2 }}
-            className="-mt-18 w-[45%] flex-col px-8  md:mt-0 md:px-0"
+            className="mt-24 md:w-[50%] flex-col px-8  md:mt-0 md:px-0"
           >
+            <div className="mb-5 flex">
+            <Link
+              href={
+                "https://www.bbb.org/ca/bc/vancouver/profile/digital-marketing/pulse-marketing-inc-0037-2428735/#sealclick"
+              }
+              target="_blank"
+            >
+              <Image
+                alt="image"
+                className="mr-8"
+                src={"/accrebited-bussiness-logo2.png"}
+                width={125}
+                height={125}
+                loading="eager"
+              />
+            </Link>
+
+            <Link
+              href={
+                "https://www.google.com/search?sca_esv=09379ecd0b6efd91&sca_upv=1&q=Pulse+Marketing+Inc.&ludocid=8690602816288484550&lsig=AB86z5VS1uhD8C0TEf_4MQU5HsGp&kgs=dd8e1417abb4f44a&shndl=30&shem=lnole,lsde,lsp&source=sh/x/loc/act/m1/1"
+              }
+              target="_blank"
+            >
+              <Image
+                alt="image"
+                src={"/google-review-logo2.png"}
+                width={125}
+                height={125}
+                loading="eager"
+              />
+            </Link>
+          </div>
             <div className="mb-2 flex w-auto items-center gap-1">
               <Image
                 src="/images/services_page_images/blue-dot.png"
@@ -60,6 +95,37 @@ const HeroSection = () => {
               Full-Service Branding <br />
               Agency With A Difference
             </h2>
+
+            <div className="mt-3 flex w-full flex-col flex-wrap gap-2 text-left md:flex-row md:items-center md:gap-3">
+            <p> Clients rate our team and work</p>
+            <div className="flex text-yellow-500">
+              <FaStar />
+              <FaStar />
+              <FaStar />
+              <FaStar />
+            </div>
+            <p>4.8/5</p>
+            <p className="-mb-[8px] text-blue-300 md:mb-0">
+              based on 86 client reviews
+            </p>
+          </div>
+          <div className="mt-5">
+            <Link
+              href={"https://calendly.com/ianpslater/20min"}
+              target="_blank"
+            >
+              <button
+                // onClick={toggleForm}
+                className="poppins-regular contact-btn mb-10 mt-0 flex items-center justify-between rounded-3xl border-none bg-white px-4 py-2 text-black outline-none ease-in-out hover:bg-my-blue-gradient hover:text-white hover:transition-all md:mb-0 md:mt-[24px]"
+              >
+                Book Now
+                <div className="ml-2 h-full rounded-full bg-[#6EE3D7] p-[2px]">
+                  <MdArrowForward />
+                </div>
+              </button>
+              {/* <PrimaryBtn text={"Book now"} /> */}
+            </Link>
+          </div>
           </motion.div>
 
           {/* hero form  */}

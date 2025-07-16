@@ -1,8 +1,10 @@
 "use client";
 import React from "react";
 import Link from "next/link";
+import { FaStar } from "react-icons/fa";
 import Navbar from "@/components/landing_page_components/Navbar";
 import Image from "next/image";
+import { MdArrowForward } from "react-icons/md";
 // import { Reveal } from '@/utils/Reveal'
 import PrimaryBtn from "../PrimaryBtns/PrimaryBtn";
 import { motion } from "motion/react";
@@ -17,10 +19,10 @@ const HeroSection = () => {
         backgroundAttachment: "fixed",
         backgroundPosition: "center",
       }}
-      className="ct-banner pb-[140px] md:pb-[150px] 2xl:pb-0"
+      className="ct-banner pb-[380px] md:pb-[150px] 2xl:pb-0"
     >
       <Navbar />
-      <div className="relative mx-auto flex h-[75vh] w-[100%] md:w-[1200px] flex-col md:flex-row items-center justify-between md:h-[100vh] md:pt-[60px]">
+      <div className="relative mx-auto flex h-[75vh] w-[100%] flex-col items-center justify-between md:h-[100vh] md:w-[1200px] md:flex-row md:pt-[60px]">
         {/* hero heading  */}
         <div
           // initial={{
@@ -37,8 +39,40 @@ const HeroSection = () => {
           //   ease: "easeInOut",
           // }}
           // viewport={{ once: false, amount: 0.2 }}
-          className="mt-28 md:mx-0 md:ml-0 w-[100%] md:w-[50%] flex-col px-8  md:mt-0 md:px-0"
+          className="mt-34 w-[100%] flex-col px-8 md:mx-0 md:ml-0 md:mt-0  md:w-[50%] md:px-0"
         >
+          <div className="flex mb-5">
+            <Link
+              href={
+                "https://www.bbb.org/ca/bc/vancouver/profile/digital-marketing/pulse-marketing-inc-0037-2428735/#sealclick"
+              }
+              target="_blank"
+            >
+              <Image
+                alt="image"
+                className="mr-8"
+                src={"/accrebited-bussiness-logo2.png"}
+                width={125}
+                height={125}
+                loading="eager"
+              />
+            </Link>
+
+            <Link
+              href={
+                "https://www.google.com/search?sca_esv=09379ecd0b6efd91&sca_upv=1&q=Pulse+Marketing+Inc.&ludocid=8690602816288484550&lsig=AB86z5VS1uhD8C0TEf_4MQU5HsGp&kgs=dd8e1417abb4f44a&shndl=30&shem=lnole,lsde,lsp&source=sh/x/loc/act/m1/1"
+              }
+              target="_blank"
+            >
+              <Image
+                alt="image"
+                src={"/google-review-logo2.png"}
+                width={125}
+                height={125}
+                loading="eager"
+              />
+            </Link>
+          </div>
           <div className="mb-2 flex w-auto items-center gap-1">
             <Image
               src="/images/services_page_images/blue-dot.png"
@@ -58,12 +92,34 @@ const HeroSection = () => {
           <h2 className="mt-5 text-xs md:text-2xl">
             Generate 30–70% More Revenue With the Same Traffic
           </h2>
+          <div className="flex w-full flex-col flex-wrap gap-2 text-left mt-3 md:flex-row md:items-center md:gap-3">
+            <p> Clients rate our team and work</p>
+            <div className="flex text-yellow-500">
+              <FaStar />
+              <FaStar />
+              <FaStar />
+              <FaStar />
+            </div>
+            <p>4.8/5</p>
+            <p className="md:mb-0 -mb-[8px] text-blue-300">
+              based on 86 client reviews
+            </p>
+          </div>
           <div className="mt-5">
             <Link
               href={"https://calendly.com/ianpslater/20min"}
               target="_blank"
             >
-              <PrimaryBtn text={"Book now"} />
+              <button
+                // onClick={toggleForm}
+                className="poppins-regular contact-btn mb-10 mt-0 flex items-center justify-between rounded-3xl border-none bg-white px-4 py-2 text-black outline-none ease-in-out hover:bg-my-blue-gradient hover:text-white hover:transition-all md:mb-0 md:mt-[24px]"
+              >
+                Book Now
+                <div className="ml-2 h-full rounded-full bg-[#6EE3D7] p-[2px]">
+                  <MdArrowForward />
+                </div>
+              </button>
+              {/* <PrimaryBtn text={"Book now"} /> */}
             </Link>
           </div>
         </div>
@@ -84,7 +140,7 @@ const HeroSection = () => {
           //   ease: "easeInOut",
           // }}
           // viewport={{ once: false, amount: 0.2 }}
-          className="absolute md:top-[260px] top-[350px] right-5 md:-right-5 z-20"
+          className="absolute right-5 top-[580px] z-20 md:-right-5 md:top-[260px]"
         >
           <Image
             src="/images/cro_page_images/cro-page-upper-min 1.png"

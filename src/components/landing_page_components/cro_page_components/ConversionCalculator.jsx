@@ -187,7 +187,7 @@ export default function ConversionCalculator() {
         {/* <p>Reach your revenue goals with CRO.</p> */}
         <p className="mb-8 md:text-normal text-xs">
           Find out the ROI from conversion rate optimization with this
-          calculator
+          calculator.
         </p>
       </div>
       <div
