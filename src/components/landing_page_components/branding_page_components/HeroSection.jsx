@@ -26,7 +26,7 @@ const HeroSection = () => {
         className="ct-banner pb-[150px] md:pb-[200px]"
       >
         <Navbar />
-        <div className="relative mx-auto pt-[120px] flex h-[75vh] w-[1200px] flex-row items-center justify-between md:h-[100vh] md:pt-[60px]">
+        <div className="relative mx-auto pt-[120px] flex h-[75vh] w-[1200px] flex-row items-center justify-between md:h-[100vh] md:pt-[0px]">
           {/* hero heading  */}
           <div
             // initial={{

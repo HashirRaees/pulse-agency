@@ -22,7 +22,7 @@ const HeroSection = () => {
       className="ct-banner md:pb-[370px] pb-[280px]"
     >
       <Navbar />
-      <div className="relative mx-auto flex h-[70vh] w-[1200px] flex-row items-center justify-between md:h-[100vh] pt-[140px] md:pt-[50px]">
+      <div className="relative mx-auto flex h-[70vh] w-[1200px] flex-row items-center justify-between md:h-[100vh] pt-[140px] md:pt-[0px]">
         {/* hero heading  */}
         <motion.div
           initial={{

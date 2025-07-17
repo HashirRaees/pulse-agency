@@ -147,7 +147,7 @@ const HeroSection = () => {
                 <Image
                   alt="image"
                   className="mr-8"
-                  src={"/accrebited-bussiness-logo2.png"}
+                  src={"/images/cro_page_images/bbb.png"}
                   width={125}
                   height={125}
                   loading="eager"
@@ -162,7 +162,7 @@ const HeroSection = () => {
               >
                 <Image
                   alt="image"
-                  src={"/google-review-logo2.png"}
+                  src={"/images/cro_page_images/google.png"}
                   width={125}
                   height={125}
                   loading="eager"

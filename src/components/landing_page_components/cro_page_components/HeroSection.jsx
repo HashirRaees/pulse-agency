@@ -51,7 +51,7 @@ const HeroSection = () => {
               <Image
                 alt="image"
                 className="mr-8"
-                src={"/accrebited-bussiness-logo2.png"}
+                src={"/images/cro_page_images/bbb.png"}
                 width={125}
                 height={125}
                 loading="eager"
@@ -66,7 +66,7 @@ const HeroSection = () => {
             >
               <Image
                 alt="image"
-                src={"/google-review-logo2.png"}
+                src={"/images/cro_page_images/google.png"}
                 width={125}
                 height={125}
                 loading="eager"
@@ -89,9 +89,11 @@ const HeroSection = () => {
           <h2 className="text-left text-2xl font-bold leading-tight md:text-7xl">
             Conversion Rate <br /> Optimization
           </h2>
+          <div className="my-4 w-[90%] border-l-2 pl-3">
           <h2 className="mt-5 text-xs md:text-2xl">
-            Generate 30–70% More Revenue With the Same Traffic
+            Generate 30–70% More Revenue <br /> With the Same Traffic
           </h2>
+          </div>
           <div className="flex w-full flex-col flex-wrap gap-2 text-left mt-3 md:flex-row md:items-center md:gap-3">
             <p> Clients rate our team and work</p>
             <div className="flex text-yellow-500">
@@ -140,10 +142,10 @@ const HeroSection = () => {
           //   ease: "easeInOut",
           // }}
           // viewport={{ once: false, amount: 0.2 }}
-          className="absolute right-5 top-[580px] z-20 md:-right-5 md:top-[260px]"
+          className="absolute right-5 top-[580px] z-20 md:-right-5 md:top-[330px]"
         >
           <Image
-            src="/images/cro_page_images/cro-page-upper-min 1.png"
+            src="/images/cro_page_images/cro-page-upper-min 1.svg"
             alt=""
             height={100}
             width={320}

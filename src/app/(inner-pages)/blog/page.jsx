@@ -6,6 +6,7 @@ import React from "react";
 import Link from "next/link";
 import { MdArrowForward } from "react-icons/md";
 import { FaStar } from "react-icons/fa";
+import Calender from '@/components/Calender/Calender';
 import { FireApi } from "../../../../utils/useRequest";
 import { useRouter } from "next/navigation";
 import PrimaryBtn from "@/components/landing_page_components/PrimaryBtns/PrimaryBtn";
@@ -93,7 +94,7 @@ const BlogPage = () => {
                           <Image
                             alt="image"
                             className="mr-8"
-                            src={"/accrebited-bussiness-logo2.png"}
+                            src={"/images/cro_page_images/bbb.png"}
                             width={125}
                             height={125}
                             loading="eager"
@@ -108,7 +109,7 @@ const BlogPage = () => {
                         >
                           <Image
                             alt="image"
-                            src={"/google-review-logo2.png"}
+                            src={"/images/cro_page_images/google.png"}
                             width={125}
                             height={125}
                             loading="eager"
@@ -251,14 +252,16 @@ const BlogPage = () => {
       </div>
 
       {/* pagination  */}
-      <div className="-mt-[20rem] mb-20 flex justify-center md:-mt-[12%]">
+      <div className="-mt-[20rem] mb-20 flex justify-center md:-mt-[15%]">
         <CustomPagination
           count={Math.ceil(blogComponent.length / blogsPerPage)} // Total pages
           page={currentPage}
           onChange={handlePageChange}
         />
       </div>
-
+     <div className='md:-mt-16 md:mb-20 -mt-12'>
+        <Calender/>
+        </div>
       <div className="-mt-12">
         <Footer />
       </div>

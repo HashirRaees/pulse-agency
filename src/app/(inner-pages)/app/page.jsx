@@ -8,8 +8,10 @@ import Testimonials from '@/components/landing_page_components/app_page_componen
 import FaqSection from '@/components/landing_page_components/app_page_components/FaqSection';
 // import OurBlog from '@/components/landing_page_components/app_page_components/OurBlog';
 import Footer from '@/components/layout/Footer';
+import Calender from '@/components/Calender/Calender';
 import Offerings from '../../../components/landing_page_components/app_page_components/OfferingSection';
 import IosFriendly from '../../../components/landing_page_components/app_page_components/IosFriendly';
+// import Calendar from '@/components/Calender';
 
 const App = () => {
   return (
@@ -23,6 +25,9 @@ const App = () => {
             {/* <AndriodSection/> */}
             <Testimonials/>
             <FaqSection/>
+             <div className='md:-mt-10 -mt-12'>
+        <Calender/>
+        </div>
             {/* <OurBlog/> */}
             <Footer/>
         </main>
