@@ -54,8 +54,9 @@ const Footer = () => {
                 <FaStar />
                 <FaStar />
                 <FaStar />
+                <FaStar />
               </div>
-              <p>4.8/5</p>
+              <p>4.9</p>
               <p className="text-gray-500">based on 86 client reviews</p>
             </div>
       <main className="relative mt-4 w-full pb-12 text-white sm:mt-20 md:pt-12">
