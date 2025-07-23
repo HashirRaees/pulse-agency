@@ -19,10 +19,10 @@ const HeroSection = () => {
         backgroundAttachment: "fixed",
         backgroundPosition: "center",
       }}
-      className="ct-banner pb-[380px] md:pb-[150px] 2xl:pb-0"
+      className="ct-banner cro-home pb-[400px] md:pb-[150px] 2xl:pb-0"
     >
       <Navbar />
-      <div className="relative mx-auto flex h-[75vh] z-99 w-[100%] flex-col items-center justify-between md:h-[100vh] md:w-[1200px] md:flex-row md:pt-[60px]">
+      <div className="relative mx-auto flex h-[75vh] z-40 w-[100%] flex-col items-center justify-between md:h-[100vh] md:w-[1200px] md:flex-row md:pt-[60px]">
         {/* hero heading  */}
         <div
           // initial={{
@@ -101,8 +101,9 @@ const HeroSection = () => {
               <FaStar />
               <FaStar />
               <FaStar />
+              <FaStar />
             </div>
-            <p>4.8/5</p>
+            <p>4.9</p>
             <p className="md:mb-0 -mb-[8px] text-blue-300">
               based on 86 client reviews
             </p>
@@ -142,7 +143,7 @@ const HeroSection = () => {
           //   ease: "easeInOut",
           // }}
           // viewport={{ once: false, amount: 0.2 }}
-          className="absolute right-5 top-[580px] z-20 md:-right-5 md:top-[330px]"
+          className="absolute right-[2.55rem] top-[620px] z-20 md:-right-5 md:top-[330px]"
         >
           <Image
             src="/images/cro_page_images/cro-page-upper-min 1.svg"

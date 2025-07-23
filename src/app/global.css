@@ -43,8 +43,17 @@ body {
   display: inline-block;
   background-repeat: no-repeat;
 }
-
+.abt-text{
+  font-size: 22px !important;
+}
+.txt-ovrflow{
+    height: 110px;
+    overflow: hidden;
+}
 @media (max-width: 600px) {
+  .abt-text{
+    font-size: 15px !important;
+  }
   .ct-banner:before {
     content: "" !important;
     bottom: 0 !important;

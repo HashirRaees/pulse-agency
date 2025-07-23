@@ -16,11 +16,11 @@ const HeroSection = () => {
           backgroundAttachment: "fixed",
           backgroundPosition: "center",
         }}
-        className="ct-banner pb-[250px] md:pb-[150px]"
+        className="ct-banner cro-home pb-[250px] md:pb-[150px]"
       >
         <Navbar />
         <div className="relative flex h-[60vh] w-full flex-col items-center justify-center md:h-[76vh]">
-          <div className="translate-y-[6.8rem] flex-col md:translate-y-[4rem]">
+          <div className="translate-y-[6.8rem] z-40 flex-col md:translate-y-[4rem]">
              <div className="flex mb-5">
             <Link
               href={
@@ -80,8 +80,9 @@ const HeroSection = () => {
               <FaStar />
               <FaStar />
               <FaStar />
+              <FaStar />
             </div>
-            <p>4.8/5</p>
+            <p>4.9</p>
             <p className="md:mb-0 -mb-[8px] text-blue-300">
               based on 86 client reviews
             </p>

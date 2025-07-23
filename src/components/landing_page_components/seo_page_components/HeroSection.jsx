@@ -18,7 +18,7 @@ export default function HeroSection() {
         backgroundAttachment: "fixed",
         backgroundPosition: "center",
       }}
-      className="ct-banner pb-[230px] md:pb-[150px]"
+      className="ct-banner cro-home pb-[230px] md:pb-[150px]"
     >
       <Navbar />
       <div className="relative mx-auto md:pt-0 pt-[220px] flex h-[70vh] w-[1200px] flex-row items-center justify-between px-4 md:h-[110vh] md:px-0">
@@ -93,8 +93,9 @@ export default function HeroSection() {
               <FaStar />
               <FaStar />
               <FaStar />
+               <FaStar />
             </div>
-            <p>4.8/5</p>
+            <p>4.9</p>
             <p className="-mb-[8px] text-blue-300 md:mb-0">
               based on 86 client reviews
             </p>

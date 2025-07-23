@@ -76,14 +76,14 @@ const BlogPage = () => {
           backgroundAttachment: "fixed",
           backgroundPosition: "center",
         }}
-        className="relative pb-[200px]"
+        className="relative cro-home pb-[200px]"
       >
         {/* Overlay */}
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
         <Navbar />
         <div className="relative flex h-[85vh] w-full flex-col items-center justify-center md:h-[100vh]">
-          <div className="z-10 flex md:w-[49%] translate-y-17 w-[90%] flex-col md:translate-y-[0rem]">
+          <div className="z-10 flex md:w-[70%] translate-y-17 w-[90%] flex-col md:translate-y-[0rem]">
             <div className="mb-5 flex">
                         <Link
                           href={
@@ -136,7 +136,7 @@ const BlogPage = () => {
               Insights That <br/> Drive Growth
             </h2>
 
-            <p className="text-left md:text-base text-sm mt-2 md:w-[80%] text-gray-200">
+            <p className="text-left abt-text md:leading-7 md:text-base text-sm mt-2 md:w-[80%] text-gray-200">
             Expert strategies and creative insights to help businesses thrive in Canada.
              Based in Vancouver, BC,
              we share actionable tips to boost sales, build brands, and scale success.
@@ -148,8 +148,9 @@ const BlogPage = () => {
                           <FaStar />
                           <FaStar />
                           <FaStar />
+                          <FaStar />
                         </div>
-                        <p>4.8/5</p>
+                        <p>4.9</p>
                         <p className="-mb-[8px] text-blue-300 md:mb-0">
                           based on 86 client reviews
                         </p>
@@ -211,7 +212,7 @@ const BlogPage = () => {
         </div>
       </main>
 
-      <div className="mx-auto my-4 flex max-w-[1200px] translate-y-[-7%] transform flex-wrap justify-between gap-8 md:gap-4 px-4 pt-6 md:my-0 md:translate-y-[-20%]">
+      <div className="mx-auto my-4 flex max-w-[1200px] translate-y-[-7%] transform flex-wrap justify-between gap-8 md:gap-4 px-4 pt-6 md:my-0 md:translate-y-[-16%]">
         {currentBlogs.map((item, index) => (
           <div
             key={index}
@@ -235,8 +236,8 @@ const BlogPage = () => {
             >
               <h2 className="line-clamp-2 text-xl font-bold">{item?.name}</h2>
 
-              <p className="text-gray-400">
-                {item?.section?.slice(0, 220) + "."}
+              <p className="txt-ovrflow text-gray-400">
+                {item?.section}
               </p>
 
               <div>
@@ -252,7 +253,7 @@ const BlogPage = () => {
       </div>
 
       {/* pagination  */}
-      <div className="-mt-[20rem] mb-20 flex justify-center md:-mt-[15%]">
+      <div className="-mt-[20rem] mb-20 flex justify-center md:-mt-[8%]">
         <CustomPagination
           count={Math.ceil(blogComponent.length / blogsPerPage)} // Total pages
           page={currentPage}

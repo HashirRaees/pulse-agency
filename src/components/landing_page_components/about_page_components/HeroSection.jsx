@@ -130,13 +130,13 @@ const HeroSection = () => {
           backgroundAttachment: "fixed",
           backgroundPosition: "center",
         }}
-        className="relative pb-[400px] md:pb-[250px]"
+        className="relative cro-home pb-[400px] md:pb-[250px]"
       >
         <div className="absolute inset-0 bg-black/30 bg-opacity-50"></div>
 
         <Navbar />
         <div className="relative flex h-[90vh] w-full flex-col items-center justify-center md:h-[105vh]">
-          <div className="z-10 flex w-[80%] translate-y-[4.2rem] flex-col md:w-[45%] md:translate-y-[0rem]">
+          <div className="z-10 flex w-[80%] translate-y-[4.2rem] flex-col md:w-[70%] md:translate-y-[0rem]">
             <div className="mb-5 flex">
               <Link
                 href={
@@ -188,7 +188,7 @@ const HeroSection = () => {
               Fueling Success.
             </h2>
 
-            <p className="mx-auto mt-2 w-[100%] text-left text-xs font-medium leading-snug text-gray-200 md:text-base">
+            <p className="mx-auto abt-text mt-2 w-[100%] text-left text-xs font-medium leading-snug text-gray-100 md:text-xl">
               We help businesses scale faster through revenue-focused
               strategies, cutting-edge web development, and data-driven
               marketing solutions.
@@ -201,8 +201,9 @@ const HeroSection = () => {
                 <FaStar />
                 <FaStar />
                 <FaStar />
+                <FaStar />
               </div>
-              <p>4.8/5</p>
+              <p>4.9</p>
               <p className="-mb-[8px] text-blue-300 md:mb-0">
                 based on 86 client reviews
               </p>

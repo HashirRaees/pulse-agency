@@ -101,8 +101,9 @@ const HeroLeftContent = () => {
             <FaStar />
             <FaStar />
             <FaStar />
+            <FaStar />
           </div>
-          <p>4.8/5</p>
+          <p>4.9</p>
           <p className="text-gray-500 md:pb-0 pb-4">based on 86 client reviews</p>
         </div>
 

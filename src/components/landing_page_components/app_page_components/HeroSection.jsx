@@ -18,7 +18,7 @@ const HeroSection = () => {
         backgroundAttachment: "fixed",
         backgroundPosition: "center",
       }}
-      className="ct-banner pb-[250px] md:pb-[150px]"
+      className="ct-banner cro-home pb-[250px] md:pb-[150px]"
     >
       <Navbar />
       <div className="relative mx-auto md:mt-0 pt-64 flex h-[60vh] w-[1200px] flex-row items-center justify-between md:h-[100vh] md:pt-[60px]">
@@ -97,8 +97,9 @@ const HeroSection = () => {
               <FaStar />
               <FaStar />
               <FaStar />
+              <FaStar />
             </div>
-            <p>4.8/5</p>
+            <p>4.9</p>
             <p className="-mb-[8px] text-blue-300 md:mb-0">
               based on 86 client reviews
             </p>
