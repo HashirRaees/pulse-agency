@@ -19,7 +19,7 @@ const HeroSection = () => {
         backgroundAttachment: "fixed",
         backgroundPosition: "center",
       }}
-      className="ct-banner cro-home pb-[400px] md:pb-[150px] 2xl:pb-0"
+      className="ct-banner cro-home pb-[460px] md:pb-[150px] 2xl:pb-0"
     >
       <Navbar />
       <div className="relative mx-auto flex h-[75vh] z-40 w-[100%] flex-col items-center justify-between md:h-[100vh] md:w-[1200px] md:flex-row md:pt-[60px]">
@@ -143,13 +143,13 @@ const HeroSection = () => {
           //   ease: "easeInOut",
           // }}
           // viewport={{ once: false, amount: 0.2 }}
-          className="absolute right-[2.55rem] top-[620px] z-20 md:-right-5 md:top-[330px]"
+          className="absolute right-[0.5rem] top-[650px] z-20 md:-right-5 md:top-[330px]"
         >
           <Image
             src="/images/cro_page_images/cro-page-upper-min 1.svg"
             alt=""
             height={100}
-            width={320}
+            width={400}
             className="md:w-[540px]"
           />
         </div>
