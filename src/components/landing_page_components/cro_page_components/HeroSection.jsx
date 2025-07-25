@@ -90,8 +90,8 @@ const HeroSection = () => {
             Conversion Rate <br /> Optimization
           </h2>
           <div className="my-4 w-[90%] border-l-2 pl-3">
-          <h2 className="mt-5 text-xs md:text-2xl">
-            Generate 30–70% more revenue <br /> with the same traffic
+          <h2 className="mt-5 poppins-light">
+            Generate 30–70% more revenue <br /> with the same traffic.
           </h2>
           </div>
           <div className="flex w-full flex-col flex-wrap gap-2 text-left mt-3 md:flex-row md:items-center md:gap-3">
