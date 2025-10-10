@@ -16,7 +16,7 @@ const Calender = () => {
 
       const div = document.createElement("div");
       div.className = "calendly-inline-widget";
-      div.dataset.url = "https://calendly.com/ianpslater/20min"; // Replace with your Calendly link
+      div.dataset.url = "https://calendly.com/ianpslater/interview"; // Replace with your Calendly link
       div.style.minWidth = "100%"; // Ensure it fits within mobile screens
       div.style.height = "600px";
       div.style.display = "flex";

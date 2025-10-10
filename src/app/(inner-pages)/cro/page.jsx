@@ -12,7 +12,7 @@ import FAQSection from "@/components/landing_page_components/cro_page_components
 import Calender from "@/components/Calender/Calender";
 import ConversionCalculator from "@/components/landing_page_components/cro_page_components/ConversionCalculator";
 import BrandLogoCards from "@/components/ChoosePlus/BrandLogoCards";
-// import VideoSection from "@/components/landing_page_components/cro_page_components/VideoSection";
+import VideoSection from "@/components/landing_page_components/cro_page_components/VideoSection";
 import CroProcess1 from "@/components/landing_page_components/cro_page_components/CroProcess1";
 // import WhoWeWork from "@/components/landing_page_components/cro_page_components/WhoWeWork";
 import Pricing from "@/components/landing_page_components/cro_page_components/Pricing"
@@ -48,12 +48,12 @@ const page = () => {
       {/* <WhoWeWork/> */}
       </div>
       {/* <SecondSection /> */}
-      {/* <VideoSection/> */}
       <Pricing/>
       <BeforeAfterTabs/>
       {/* <PulseDifferent/> */}
       {/* <WhyChooseUs /> */}
       {/* <CROProcess /> */}
+      <VideoSection/>
       <CroProcess1/>
       <Team/>
       <YoutubeReviews/>
